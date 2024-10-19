@@ -2,9 +2,15 @@ import torch
 import cv2
 import numpy as np
 from torchvision import transforms
+from networks.DDAM import DDAMNet
 
 def load_model(model_path):
-    model = torch.load(model_path, map_location=torch.device('cpu'))
+    num_classes = 7
+    if 'ferPlus' in model_path:
+        num_classes = 8
+    model = DDAMNet(num_classes, pretrained=False)
+    checkpoint = torch.load(model_path, map_location=torch.device('cpu'))
+    model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
     return model
 
@@ -18,7 +24,7 @@ def detect_faces(image):
 def predict_emotions(face, model):
     transform = transforms.Compose([
         transforms.ToPILImage(),
-        transforms.Resize((48, 48)),
+        transforms.Resize((112, 112)),
         transforms.ToTensor(),
         transforms.Normalize((0.5,), (0.5,))
     ])
@@ -26,6 +32,8 @@ def predict_emotions(face, model):
 
     with torch.no_grad():
         output = model(face_tensor)
+        if isinstance(output, tuple):
+            output = output[0]
         confidences = torch.nn.functional.softmax(output, dim=1)[0]
         emotions = ['happy', 'sad', 'neutral', 'fear', 'disgust', 'surprise', 'anger']
         predicted_emotion = emotions[torch.argmax(confidences).item()]

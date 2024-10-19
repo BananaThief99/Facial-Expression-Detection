@@ -1,22 +1,95 @@
+/* styles.css */
+
+/* Center the form and add spacing */
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
-h1 {
-    color: #333;
-}
+
 form {
-    margin: 20px auto;
+    display: inline-block;
+    margin-top: 20px;
 }
+
+/* Style the media preview */
+#mediaPreview {
+    margin-top: 20px;
+}
+
+/* Consistent button styles for buttons and dropdown */
+.button, select {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0;
+    appearance: none; /* Remove default styling for the dropdown */
+}
+
+/* Hover effect for buttons and dropdown */
+.button:hover, select:hover {
+    background-color: #45a049;
+}
+
+/* Dropdown-specific styles */
+select {
+    -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+    -moz-appearance: none;    /* Remove default styling for Mozilla browsers */
+    appearance: none;         /* Standard appearance reset */
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE1LjVsLTcuMTc1LTcuMTc1IDEuNDE0LTEuNDE0TDExLjUgMTIuNTg2bDYuMjYxLTYuMjg4TDE5Ljc2NCA4LjMyNSAxMiAxNS41eiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px; /* Extra padding for arrow space */
+}
+
+/* Hide the original file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Media preview fixed size */
+.media-preview {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* Table styles */
 table {
     margin: 20px auto;
     border-collapse: collapse;
     width: 80%;
+    max-width: 600px;
 }
-table, th, td {
-    border: 1px solid black;
-}
+
 th, td {
-    padding: 10px;
-    text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style for the "Upload New Media" link */
+a {
+    display: block;
+    margin-top: 20px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

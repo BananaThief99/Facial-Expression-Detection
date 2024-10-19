@@ -8,28 +8,42 @@
 <body>
     <h1>Results</h1>
     {% if media_type == 'image' %}
-        <img src="{{ image_path }}" alt="Processed Image">
-        <table>
-            <thead>
-                <tr><th>Face ID</th><th>Emotion</th><th>Confidence (%)</th></tr>
-            </thead>
-            <tbody>
-                {% for result in results %}
-                <tr>
-                    <td>{{ result.id }}</td>
-                    <td>{{ result.emotion }}</td>
-                    <td>{{ result.confidences }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <img src="/{{ image_path }}" alt="Processed Image" style="max-width: 300px; max-height: 300px;">
     {% elif media_type == 'video' %}
-        <video controls>
-            <source src="{{ video_path }}" type="video/mp4">
+        <video controls style="max-width: 300px; max-height: 300px;">
+            <source src="/{{ video_path }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <a href="{{ json_path }}">Download JSON results</a>
     {% endif %}
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Face ID</th>
+                <th rowspan="2">Predicted Emotion</th>
+                <th colspan="7">Confidence Level (%)</th>
+            </tr>
+            <tr>
+                <th>Neutral</th>
+                <th>Happy</th>
+                <th>Sad</th>
+                <th>Surprise</th>
+                <th>Fear</th>
+                <th>Disgust</th>
+                <th>Angry</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result.id }}</td>
+                <td>{{ result.emotion }}</td>
+                {% for emotion in ['neutral', 'happy', 'sad', 'surprise', 'fear', 'disgust', 'anger'] %}
+                <td>{{ '%.2f' % result.confidences.get(emotion, 0) }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
     <a href="/">Upload New Media</a>
 </body>
 </html>
