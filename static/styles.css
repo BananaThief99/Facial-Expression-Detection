@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+form {
+    margin: 20px auto;
+}
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}

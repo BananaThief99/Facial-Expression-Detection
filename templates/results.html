@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    {% if media_type == 'image' %}
+        <img src="{{ image_path }}" alt="Processed Image">
+        <table>
+            <thead>
+                <tr><th>Face ID</th><th>Emotion</th><th>Confidence (%)</th></tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result.id }}</td>
+                    <td>{{ result.emotion }}</td>
+                    <td>{{ result.confidences }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% elif media_type == 'video' %}
+        <video controls>
+            <source src="{{ video_path }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="{{ json_path }}">Download JSON results</a>
+    {% endif %}
+    <a href="/">Upload New Media</a>
+</body>
+</html>
