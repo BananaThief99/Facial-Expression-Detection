@@ -1,12 +1,9 @@
-from flask import Flask, request, render_template, redirect, url_for, send_file, jsonify, Response, send_from_directory, make_response
+from flask import Flask, request, render_template, redirect, url_for, send_file, jsonify, Response
 import os
 from mtcnn import MTCNN
 import cv2
 import torch
 import numpy as np
-from facenet_pytorch import InceptionResnetV1
-from deep_sort_realtime.deepsort_tracker import DeepSort
-from scipy.spatial.distance import cosine
 from torchvision import transforms
 from utils import load_model, detect_faces, predict_emotions
 
@@ -20,14 +17,8 @@ os.makedirs(RESULTS_FOLDER, exist_ok=True)
 
 emotions = ['neutral', 'happy', 'sad', 'surprise', 'fear', 'disgust', 'anger']
 
-# Initialize the FaceNet model for embedding extraction
-facenet = InceptionResnetV1(pretrained='vggface2').eval()
-
-# Initialize the DeepSORT tracker
-deep_sort_tracker = DeepSort(max_age=30, n_init=3, max_iou_distance=0.7)
-
-# Store embeddings for active tracks
-active_embeddings = {}
+# Initialize the MTCNN detector
+mtcnn_detector = MTCNN()
 
 def get_model_path(model_name):
     # Return the full path of the selected model
@@ -140,27 +131,18 @@ def process_image(file_path, model):
     cv2.imwrite(result_image_path, image)
     return render_template('results.html', media_type='image', image_path=result_image_path, results=results)
 
-# Initialize the MTCNN detector
-mtcnn_detector = MTCNN()
-
 def detect_faces_with_mtcnn(frame):
     """Detect faces using MTCNN."""
     detections = mtcnn_detector.detect_faces(frame)
     boxes = []
+    confidences = []
     for detection in detections:
         x, y, width, height = detection['box']
-        # Ensure box dimensions are within frame boundaries
+        confidence = detection.get('confidence', 1.0)  # Add default confidence if not available
         x, y = max(0, x), max(0, y)
         boxes.append([x, y, width, height])
-    return boxes
-
-def get_face_embedding(face):
-    """Extract embedding for a face using FaceNet."""
-    face_resized = cv2.resize(face, (160, 160))
-    face_tensor = torch.tensor(face_resized).permute(2, 0, 1).unsqueeze(0).float() / 255.0
-    with torch.no_grad():
-        embedding = facenet(face_tensor).squeeze().numpy()
-    return embedding
+        confidences.append(confidence)
+    return boxes, confidences
 
 def process_video(file_path, model):
     cap = cv2.VideoCapture(file_path)
@@ -173,8 +155,6 @@ def process_video(file_path, model):
     result_video_path = os.path.join("static/results", result_video_filename)
     out = cv2.VideoWriter(result_video_path, cv2.VideoWriter_fourcc(*'mp4v'), fps, (frame_width, frame_height))
 
-    result_json_path = os.path.join("static/results", f'{base_filename}_results.json')
-
     results = []
     frame_idx = 0
 
@@ -184,37 +164,12 @@ def process_video(file_path, model):
             break
 
         # Detect faces using MTCNN
-        boxes = detect_faces_with_mtcnn(frame)
-        detections = []
-        embeddings = []
-        for box in boxes:
-            x, y, width, height = box
-            detections.append([x, y, x + width, y + height])  # Convert to [x1, y1, x2, y2]
-            face = frame[y:y+height, x:x+width]
-            embeddings.append(get_face_embedding(face))
-
-        # Update tracker with detections
-        tracks = deep_sort_tracker.update_tracks(detections, frame=frame)
+        boxes, confidences = detect_faces_with_mtcnn(frame)
 
         frame_results = []
-        for track in tracks:
-            if not track.is_confirmed() or track.time_since_update > 1:
-                continue
-
-            # Get track ID and bounding box
-            track_id = track.track_id
-            bbox = track.to_tlbr()  # [x1, y1, x2, y2]
-            x1, y1, x2, y2 = map(int, bbox)
-            face = frame[y1:y2, x1:x2]
-
-            # Update or create embedding for the track
-            if track_id not in active_embeddings:
-                active_embeddings[track_id] = get_face_embedding(face)
-            else:
-                current_embedding = get_face_embedding(face)
-                similarity = 1 - cosine(active_embeddings[track_id], current_embedding)
-                if similarity < 0.5:  # Threshold for new identity
-                    active_embeddings[track_id] = current_embedding
+        for idx, box in enumerate(boxes):
+            x, y, width, height = box
+            face = frame[y:y+height, x:x+width]
 
             # Predict emotion
             emotion, confidences = predict_emotions(face, model)
@@ -222,15 +177,15 @@ def process_video(file_path, model):
 
             # Add result
             frame_results.append({
-                'id': track_id,
+                'id': idx + 1,
                 'emotion': emotion,
                 'confidences': formatted_confidences
             })
 
-            # Draw bounding box and emotion label with ID
-            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            label_position = (x1, y1 - 10 if y1 - 10 > 10 else y1 + 10)
-            cv2.putText(frame, f"ID: {track_id} {emotion}", label_position, cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
+            # Draw bounding box and emotion label
+            cv2.rectangle(frame, (x, y), (x + width, y + height), (0, 255, 0), 2)
+            label_position = (x, y - 10 if y - 10 > 10 else y + 10)
+            cv2.putText(frame, f"{emotion}", label_position, cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
         results.append({'frame': frame_idx, 'results': frame_results})
         out.write(frame)
@@ -239,11 +194,7 @@ def process_video(file_path, model):
     cap.release()
     out.release()
 
-    # Write results to JSON file
-    with open(result_json_path, 'w') as f:
-        f.write(jsonify(results).get_data(as_text=True))
-
-    return render_template('results.html', media_type='video', video_path=result_video_filename, json_path=result_json_path)
+    return render_template('results.html', media_type='video', video_path=result_video_filename)
 
 @app.route('/results')
 def results():
