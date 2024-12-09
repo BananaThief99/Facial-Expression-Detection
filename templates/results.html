@@ -1,3 +1,4 @@
+<!-- results.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,10 @@
 <body>
     <h1>Results</h1>
     {% if media_type == 'image' %}
-        <img src="/{{ image_path }}" alt="Processed Image" style="max-width: 300px; max-height: 300px;">
+        <img src="/{{ image_path }}" alt="Processed Image" style="max-width: 600px; max-height: 600px;">
     {% elif media_type == 'video' %}
-        <video controls style="max-width: 300px; max-height: 300px;">
-            <source src="/{{ video_path }}" type="video/mp4">
+        <video controls style="max-width: 600px; max-height: 600px;">
+            <source src="{{ url_for('video', filename=video_path) }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     {% endif %}
@@ -29,7 +30,7 @@
                 <th>Surprise</th>
                 <th>Fear</th>
                 <th>Disgust</th>
-                <th>Angry</th>
+                <th>Anger</th>
             </tr>
         </thead>
         <tbody>

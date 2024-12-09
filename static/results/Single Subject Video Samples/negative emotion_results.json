@@ -1,0 +1,7897 @@
+[
+  {
+    "frame": 0,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.31,
+          "disgust": 15.18,
+          "fear": 0.3,
+          "happy": 0.07,
+          "neutral": 0.01,
+          "sad": 0.12,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 1,
+    "results": [
+      {
+        "confidences": {
+          "anger": 87.75,
+          "disgust": 11.92,
+          "fear": 0.16,
+          "happy": 0.1,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 2,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.83,
+          "disgust": 12.65,
+          "fear": 0.28,
+          "happy": 0.09,
+          "neutral": 0.02,
+          "sad": 0.13,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 3,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.03,
+          "disgust": 7.63,
+          "fear": 0.17,
+          "happy": 0.1,
+          "neutral": 0.02,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 4,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.18,
+          "disgust": 7.45,
+          "fear": 0.2,
+          "happy": 0.09,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 5,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.06,
+          "disgust": 15.53,
+          "fear": 0.21,
+          "happy": 0.08,
+          "neutral": 0.02,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 6,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.04,
+          "disgust": 13.45,
+          "fear": 0.29,
+          "happy": 0.08,
+          "neutral": 0.02,
+          "sad": 0.12,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 7,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.52,
+          "disgust": 9.04,
+          "fear": 0.27,
+          "happy": 0.07,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 8,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.51,
+          "disgust": 10.06,
+          "fear": 0.24,
+          "happy": 0.08,
+          "neutral": 0.02,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 9,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.79,
+          "disgust": 16.77,
+          "fear": 0.21,
+          "happy": 0.1,
+          "neutral": 0.03,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 10,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.36,
+          "disgust": 15.84,
+          "fear": 0.53,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.19,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 11,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.55,
+          "disgust": 9.58,
+          "fear": 0.58,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.21,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 12,
+    "results": [
+      {
+        "confidences": {
+          "anger": 93.51,
+          "disgust": 5.56,
+          "fear": 0.75,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.13,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 13,
+    "results": [
+      {
+        "confidences": {
+          "anger": 91.07,
+          "disgust": 8.23,
+          "fear": 0.4,
+          "happy": 0.09,
+          "neutral": 0.06,
+          "sad": 0.12,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 14,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.02,
+          "disgust": 7.21,
+          "fear": 0.46,
+          "happy": 0.09,
+          "neutral": 0.06,
+          "sad": 0.12,
+          "surprise": 0.05
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 15,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.13,
+          "disgust": 13.62,
+          "fear": 1.55,
+          "happy": 0.12,
+          "neutral": 0.11,
+          "sad": 0.34,
+          "surprise": 0.14
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 16,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.53,
+          "disgust": 16.17,
+          "fear": 1.42,
+          "happy": 0.09,
+          "neutral": 0.11,
+          "sad": 0.53,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 17,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.2,
+          "disgust": 10.14,
+          "fear": 0.91,
+          "happy": 0.17,
+          "neutral": 0.13,
+          "sad": 0.3,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 18,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.29,
+          "disgust": 9.15,
+          "fear": 0.86,
+          "happy": 0.14,
+          "neutral": 0.15,
+          "sad": 0.21,
+          "surprise": 0.2
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 19,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.2,
+          "disgust": 19.44,
+          "fear": 3.11,
+          "happy": 0.09,
+          "neutral": 0.15,
+          "sad": 0.68,
+          "surprise": 0.34
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 20,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.52,
+          "disgust": 19.53,
+          "fear": 0.79,
+          "happy": 0.26,
+          "neutral": 0.3,
+          "sad": 0.39,
+          "surprise": 0.21
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 21,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.4,
+          "disgust": 30.59,
+          "fear": 4.3,
+          "happy": 0.11,
+          "neutral": 0.19,
+          "sad": 1.04,
+          "surprise": 0.37
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 22,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.61,
+          "disgust": 21.93,
+          "fear": 1.26,
+          "happy": 0.15,
+          "neutral": 0.24,
+          "sad": 0.61,
+          "surprise": 0.2
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 23,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.38,
+          "disgust": 31.18,
+          "fear": 2.58,
+          "happy": 0.11,
+          "neutral": 0.24,
+          "sad": 1.18,
+          "surprise": 0.33
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 24,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.18,
+          "disgust": 16.46,
+          "fear": 3.59,
+          "happy": 0.11,
+          "neutral": 0.28,
+          "sad": 0.86,
+          "surprise": 0.53
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 25,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.29,
+          "disgust": 20.57,
+          "fear": 2.45,
+          "happy": 0.1,
+          "neutral": 0.24,
+          "sad": 0.97,
+          "surprise": 0.38
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 26,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.41,
+          "disgust": 17.12,
+          "fear": 1.71,
+          "happy": 0.11,
+          "neutral": 0.31,
+          "sad": 0.91,
+          "surprise": 0.42
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 27,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.99,
+          "disgust": 15.45,
+          "fear": 2.52,
+          "happy": 0.19,
+          "neutral": 0.46,
+          "sad": 0.88,
+          "surprise": 0.52
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 28,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.0,
+          "disgust": 18.71,
+          "fear": 1.91,
+          "happy": 0.2,
+          "neutral": 0.59,
+          "sad": 1.08,
+          "surprise": 0.5
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 29,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.17,
+          "disgust": 13.1,
+          "fear": 3.73,
+          "happy": 0.11,
+          "neutral": 0.27,
+          "sad": 1.05,
+          "surprise": 0.58
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 30,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.02,
+          "disgust": 17.63,
+          "fear": 1.49,
+          "happy": 0.12,
+          "neutral": 0.39,
+          "sad": 0.86,
+          "surprise": 0.49
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 31,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.42,
+          "disgust": 21.68,
+          "fear": 1.89,
+          "happy": 0.1,
+          "neutral": 0.33,
+          "sad": 1.2,
+          "surprise": 0.38
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 32,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.14,
+          "disgust": 21.9,
+          "fear": 1.48,
+          "happy": 0.16,
+          "neutral": 0.6,
+          "sad": 1.31,
+          "surprise": 0.4
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 33,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.09,
+          "disgust": 15.27,
+          "fear": 3.45,
+          "happy": 0.08,
+          "neutral": 0.31,
+          "sad": 1.34,
+          "surprise": 0.46
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 34,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.35,
+          "disgust": 12.99,
+          "fear": 3.62,
+          "happy": 0.08,
+          "neutral": 0.29,
+          "sad": 1.16,
+          "surprise": 0.5
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 35,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.86,
+          "disgust": 12.68,
+          "fear": 4.81,
+          "happy": 0.1,
+          "neutral": 0.4,
+          "sad": 1.22,
+          "surprise": 0.92
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 36,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.6,
+          "disgust": 16.67,
+          "fear": 2.78,
+          "happy": 0.08,
+          "neutral": 0.3,
+          "sad": 1.13,
+          "surprise": 0.45
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 37,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.76,
+          "disgust": 16.01,
+          "fear": 2.68,
+          "happy": 0.17,
+          "neutral": 0.83,
+          "sad": 1.67,
+          "surprise": 0.89
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 38,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.2,
+          "disgust": 25.3,
+          "fear": 2.18,
+          "happy": 0.11,
+          "neutral": 0.45,
+          "sad": 1.25,
+          "surprise": 0.52
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 39,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.57,
+          "disgust": 16.12,
+          "fear": 3.59,
+          "happy": 0.12,
+          "neutral": 0.48,
+          "sad": 1.37,
+          "surprise": 0.75
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 40,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.32,
+          "disgust": 19.52,
+          "fear": 3.35,
+          "happy": 0.09,
+          "neutral": 0.43,
+          "sad": 1.7,
+          "surprise": 0.57
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 41,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.39,
+          "disgust": 19.47,
+          "fear": 4.22,
+          "happy": 0.12,
+          "neutral": 0.51,
+          "sad": 1.46,
+          "surprise": 0.83
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 42,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.93,
+          "disgust": 20.98,
+          "fear": 3.26,
+          "happy": 0.11,
+          "neutral": 0.51,
+          "sad": 1.65,
+          "surprise": 0.55
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 43,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.5,
+          "disgust": 19.32,
+          "fear": 2.99,
+          "happy": 0.13,
+          "neutral": 0.62,
+          "sad": 1.95,
+          "surprise": 0.49
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 44,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.79,
+          "disgust": 21.84,
+          "fear": 3.64,
+          "happy": 0.1,
+          "neutral": 0.42,
+          "sad": 1.68,
+          "surprise": 0.53
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 45,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.25,
+          "disgust": 19.38,
+          "fear": 5.55,
+          "happy": 0.1,
+          "neutral": 0.42,
+          "sad": 1.64,
+          "surprise": 0.66
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 46,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.04,
+          "disgust": 19.46,
+          "fear": 2.61,
+          "happy": 0.14,
+          "neutral": 0.56,
+          "sad": 1.72,
+          "surprise": 0.46
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 47,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.09,
+          "disgust": 18.71,
+          "fear": 2.53,
+          "happy": 0.12,
+          "neutral": 0.54,
+          "sad": 1.56,
+          "surprise": 0.43
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 48,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.24,
+          "disgust": 20.35,
+          "fear": 3.77,
+          "happy": 0.12,
+          "neutral": 0.49,
+          "sad": 1.4,
+          "surprise": 0.64
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 49,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.43,
+          "disgust": 21.35,
+          "fear": 2.4,
+          "happy": 0.18,
+          "neutral": 0.68,
+          "sad": 1.52,
+          "surprise": 0.43
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 50,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.14,
+          "disgust": 18.81,
+          "fear": 3.0,
+          "happy": 0.15,
+          "neutral": 0.67,
+          "sad": 1.76,
+          "surprise": 0.47
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 51,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.66,
+          "disgust": 17.78,
+          "fear": 3.13,
+          "happy": 0.11,
+          "neutral": 0.45,
+          "sad": 1.45,
+          "surprise": 0.42
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 52,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.17,
+          "disgust": 22.36,
+          "fear": 2.81,
+          "happy": 0.16,
+          "neutral": 0.66,
+          "sad": 1.37,
+          "surprise": 0.47
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 53,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.44,
+          "disgust": 27.14,
+          "fear": 3.16,
+          "happy": 0.12,
+          "neutral": 0.47,
+          "sad": 1.22,
+          "surprise": 0.45
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 54,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.57,
+          "disgust": 33.99,
+          "fear": 2.48,
+          "happy": 0.1,
+          "neutral": 0.4,
+          "sad": 1.06,
+          "surprise": 0.4
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 55,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.71,
+          "disgust": 34.09,
+          "fear": 3.14,
+          "happy": 0.11,
+          "neutral": 0.41,
+          "sad": 1.06,
+          "surprise": 0.46
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 56,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.81,
+          "disgust": 22.43,
+          "fear": 2.47,
+          "happy": 0.14,
+          "neutral": 0.5,
+          "sad": 1.23,
+          "surprise": 0.42
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 57,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.78,
+          "disgust": 29.76,
+          "fear": 2.75,
+          "happy": 0.12,
+          "neutral": 0.52,
+          "sad": 1.62,
+          "surprise": 0.45
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 58,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.03,
+          "disgust": 30.33,
+          "fear": 3.23,
+          "happy": 0.14,
+          "neutral": 0.45,
+          "sad": 1.36,
+          "surprise": 0.46
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 59,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.98,
+          "disgust": 27.08,
+          "fear": 2.35,
+          "happy": 0.14,
+          "neutral": 0.57,
+          "sad": 1.4,
+          "surprise": 0.47
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 60,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.31,
+          "disgust": 32.16,
+          "fear": 2.72,
+          "happy": 0.12,
+          "neutral": 0.34,
+          "sad": 1.01,
+          "surprise": 0.33
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 61,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.33,
+          "disgust": 32.36,
+          "fear": 2.32,
+          "happy": 0.11,
+          "neutral": 0.39,
+          "sad": 1.13,
+          "surprise": 0.35
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 62,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.02,
+          "disgust": 31.14,
+          "fear": 2.2,
+          "happy": 0.11,
+          "neutral": 0.32,
+          "sad": 0.92,
+          "surprise": 0.3
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 63,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.41,
+          "disgust": 26.2,
+          "fear": 2.29,
+          "happy": 0.12,
+          "neutral": 0.45,
+          "sad": 1.22,
+          "surprise": 0.31
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 64,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.4,
+          "disgust": 31.43,
+          "fear": 1.63,
+          "happy": 0.11,
+          "neutral": 0.3,
+          "sad": 0.91,
+          "surprise": 0.23
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 65,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.96,
+          "disgust": 36.83,
+          "fear": 1.87,
+          "happy": 0.1,
+          "neutral": 0.23,
+          "sad": 0.8,
+          "surprise": 0.21
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 66,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.52,
+          "disgust": 42.2,
+          "fear": 1.1,
+          "happy": 0.09,
+          "neutral": 0.3,
+          "sad": 0.57,
+          "surprise": 0.22
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 67,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.88,
+          "disgust": 30.95,
+          "fear": 1.83,
+          "happy": 0.08,
+          "neutral": 0.24,
+          "sad": 0.77,
+          "surprise": 0.25
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 68,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.25,
+          "disgust": 35.06,
+          "fear": 1.42,
+          "happy": 0.09,
+          "neutral": 0.23,
+          "sad": 0.77,
+          "surprise": 0.18
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 69,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.28,
+          "disgust": 21.39,
+          "fear": 1.26,
+          "happy": 0.08,
+          "neutral": 0.21,
+          "sad": 0.61,
+          "surprise": 0.18
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 70,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.44,
+          "disgust": 22.73,
+          "fear": 1.58,
+          "happy": 0.1,
+          "neutral": 0.25,
+          "sad": 0.63,
+          "surprise": 0.27
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 71,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.85,
+          "disgust": 34.24,
+          "fear": 1.62,
+          "happy": 0.08,
+          "neutral": 0.2,
+          "sad": 0.83,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 72,
+    "results": [
+      {
+        "confidences": {
+          "anger": 56.87,
+          "disgust": 41.01,
+          "fear": 1.09,
+          "happy": 0.09,
+          "neutral": 0.2,
+          "sad": 0.61,
+          "surprise": 0.14
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 73,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.98,
+          "disgust": 33.42,
+          "fear": 1.59,
+          "happy": 0.07,
+          "neutral": 0.16,
+          "sad": 0.61,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 74,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.32,
+          "disgust": 34.11,
+          "fear": 1.54,
+          "happy": 0.08,
+          "neutral": 0.17,
+          "sad": 0.63,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 75,
+    "results": [
+      {
+        "confidences": {
+          "anger": 66.18,
+          "disgust": 31.43,
+          "fear": 1.32,
+          "happy": 0.07,
+          "neutral": 0.18,
+          "sad": 0.67,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 76,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.31,
+          "disgust": 38.06,
+          "fear": 1.33,
+          "happy": 0.08,
+          "neutral": 0.2,
+          "sad": 0.88,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 77,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.25,
+          "disgust": 29.71,
+          "fear": 1.58,
+          "happy": 0.09,
+          "neutral": 0.24,
+          "sad": 0.88,
+          "surprise": 0.24
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 78,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.77,
+          "disgust": 25.71,
+          "fear": 1.2,
+          "happy": 0.08,
+          "neutral": 0.21,
+          "sad": 0.88,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 79,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.95,
+          "disgust": 21.49,
+          "fear": 1.36,
+          "happy": 0.09,
+          "neutral": 0.24,
+          "sad": 0.62,
+          "surprise": 0.27
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 80,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.51,
+          "disgust": 35.99,
+          "fear": 1.11,
+          "happy": 0.08,
+          "neutral": 0.22,
+          "sad": 0.92,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 81,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.26,
+          "disgust": 25.19,
+          "fear": 1.18,
+          "happy": 0.08,
+          "neutral": 0.21,
+          "sad": 0.91,
+          "surprise": 0.17
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 82,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.81,
+          "disgust": 25.51,
+          "fear": 1.39,
+          "happy": 0.08,
+          "neutral": 0.23,
+          "sad": 0.76,
+          "surprise": 0.23
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 83,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.41,
+          "disgust": 36.59,
+          "fear": 0.81,
+          "happy": 0.08,
+          "neutral": 0.23,
+          "sad": 0.73,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 84,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.73,
+          "disgust": 25.27,
+          "fear": 1.52,
+          "happy": 0.08,
+          "neutral": 0.24,
+          "sad": 0.91,
+          "surprise": 0.25
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 85,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.34,
+          "disgust": 29.7,
+          "fear": 1.55,
+          "happy": 0.08,
+          "neutral": 0.23,
+          "sad": 0.87,
+          "surprise": 0.23
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 86,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.86,
+          "disgust": 32.23,
+          "fear": 1.41,
+          "happy": 0.08,
+          "neutral": 0.24,
+          "sad": 0.96,
+          "surprise": 0.21
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 87,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.36,
+          "disgust": 20.66,
+          "fear": 1.61,
+          "happy": 0.09,
+          "neutral": 0.26,
+          "sad": 0.78,
+          "surprise": 0.23
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 88,
+    "results": [
+      {
+        "confidences": {
+          "anger": 66.08,
+          "disgust": 31.63,
+          "fear": 1.11,
+          "happy": 0.09,
+          "neutral": 0.25,
+          "sad": 0.63,
+          "surprise": 0.22
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 89,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.77,
+          "disgust": 38.1,
+          "fear": 1.02,
+          "happy": 0.07,
+          "neutral": 0.2,
+          "sad": 0.69,
+          "surprise": 0.14
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 90,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.57,
+          "disgust": 25.9,
+          "fear": 1.27,
+          "happy": 0.09,
+          "neutral": 0.27,
+          "sad": 0.63,
+          "surprise": 0.25
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 91,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.73,
+          "disgust": 29.81,
+          "fear": 1.27,
+          "happy": 0.08,
+          "neutral": 0.22,
+          "sad": 0.69,
+          "surprise": 0.21
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 92,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.39,
+          "disgust": 33.8,
+          "fear": 1.44,
+          "happy": 0.08,
+          "neutral": 0.23,
+          "sad": 0.86,
+          "surprise": 0.19
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 93,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.93,
+          "disgust": 34.57,
+          "fear": 1.28,
+          "happy": 0.08,
+          "neutral": 0.21,
+          "sad": 0.76,
+          "surprise": 0.17
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 94,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.47,
+          "disgust": 36.38,
+          "fear": 0.93,
+          "happy": 0.08,
+          "neutral": 0.25,
+          "sad": 0.71,
+          "surprise": 0.17
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 95,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.8,
+          "disgust": 27.37,
+          "fear": 1.44,
+          "happy": 0.08,
+          "neutral": 0.23,
+          "sad": 0.9,
+          "surprise": 0.18
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 96,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.3,
+          "disgust": 23.02,
+          "fear": 1.36,
+          "happy": 0.08,
+          "neutral": 0.24,
+          "sad": 0.79,
+          "surprise": 0.2
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 97,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.65,
+          "disgust": 39.3,
+          "fear": 1.04,
+          "happy": 0.08,
+          "neutral": 0.21,
+          "sad": 0.56,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 98,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.8,
+          "disgust": 39.11,
+          "fear": 1.47,
+          "happy": 0.09,
+          "neutral": 0.23,
+          "sad": 1.13,
+          "surprise": 0.17
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 99,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.38,
+          "disgust": 25.08,
+          "fear": 1.89,
+          "happy": 0.09,
+          "neutral": 0.31,
+          "sad": 0.94,
+          "surprise": 0.31
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 100,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.98,
+          "disgust": 34.21,
+          "fear": 1.45,
+          "happy": 0.08,
+          "neutral": 0.21,
+          "sad": 0.91,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 101,
+    "results": [
+      {
+        "confidences": {
+          "anger": 66.31,
+          "disgust": 31.16,
+          "fear": 1.29,
+          "happy": 0.07,
+          "neutral": 0.22,
+          "sad": 0.77,
+          "surprise": 0.18
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 102,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.78,
+          "disgust": 27.78,
+          "fear": 1.09,
+          "happy": 0.08,
+          "neutral": 0.24,
+          "sad": 0.87,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 103,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.6,
+          "disgust": 23.27,
+          "fear": 1.1,
+          "happy": 0.08,
+          "neutral": 0.2,
+          "sad": 0.6,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 104,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.08,
+          "disgust": 31.5,
+          "fear": 1.56,
+          "happy": 0.1,
+          "neutral": 0.28,
+          "sad": 1.31,
+          "surprise": 0.18
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 105,
+    "results": [
+      {
+        "confidences": {
+          "anger": 68.16,
+          "disgust": 29.1,
+          "fear": 1.47,
+          "happy": 0.08,
+          "neutral": 0.22,
+          "sad": 0.81,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 106,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.3,
+          "disgust": 37.53,
+          "fear": 1.57,
+          "happy": 0.1,
+          "neutral": 0.27,
+          "sad": 1.07,
+          "surprise": 0.16
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 107,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.65,
+          "disgust": 26.5,
+          "fear": 1.65,
+          "happy": 0.09,
+          "neutral": 0.23,
+          "sad": 0.71,
+          "surprise": 0.18
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 108,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.53,
+          "disgust": 33.16,
+          "fear": 1.27,
+          "happy": 0.09,
+          "neutral": 0.2,
+          "sad": 0.62,
+          "surprise": 0.14
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 109,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.77,
+          "disgust": 27.14,
+          "fear": 1.24,
+          "happy": 0.08,
+          "neutral": 0.16,
+          "sad": 0.49,
+          "surprise": 0.12
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 110,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.13,
+          "disgust": 30.77,
+          "fear": 1.09,
+          "happy": 0.1,
+          "neutral": 0.23,
+          "sad": 0.53,
+          "surprise": 0.15
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 111,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.74,
+          "disgust": 30.04,
+          "fear": 1.27,
+          "happy": 0.09,
+          "neutral": 0.19,
+          "sad": 0.55,
+          "surprise": 0.11
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 112,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.85,
+          "disgust": 49.32,
+          "fear": 0.95,
+          "happy": 0.11,
+          "neutral": 0.18,
+          "sad": 0.47,
+          "surprise": 0.11
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 113,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.01,
+          "disgust": 36.41,
+          "fear": 0.86,
+          "happy": 0.08,
+          "neutral": 0.13,
+          "sad": 0.45,
+          "surprise": 0.06
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 114,
+    "results": [
+      {
+        "confidences": {
+          "anger": 53.26,
+          "disgust": 44.92,
+          "fear": 1.17,
+          "happy": 0.08,
+          "neutral": 0.1,
+          "sad": 0.4,
+          "surprise": 0.07
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 115,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.17,
+          "disgust": 33.93,
+          "fear": 0.59,
+          "happy": 0.05,
+          "neutral": 0.05,
+          "sad": 0.18,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 116,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.02,
+          "disgust": 36.13,
+          "fear": 0.52,
+          "happy": 0.06,
+          "neutral": 0.06,
+          "sad": 0.17,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 117,
+    "results": [
+      {
+        "confidences": {
+          "anger": 68.8,
+          "disgust": 29.84,
+          "fear": 0.91,
+          "happy": 0.07,
+          "neutral": 0.07,
+          "sad": 0.27,
+          "surprise": 0.05
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 118,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.19,
+          "disgust": 44.01,
+          "fear": 0.48,
+          "happy": 0.05,
+          "neutral": 0.04,
+          "sad": 0.21,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 119,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.0,
+          "disgust": 30.08,
+          "fear": 0.64,
+          "happy": 0.05,
+          "neutral": 0.04,
+          "sad": 0.17,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 120,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.03,
+          "disgust": 26.0,
+          "fear": 0.7,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.17,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 121,
+    "results": [
+      {
+        "confidences": {
+          "anger": 68.63,
+          "disgust": 30.7,
+          "fear": 0.42,
+          "happy": 0.05,
+          "neutral": 0.04,
+          "sad": 0.14,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 122,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.29,
+          "disgust": 34.0,
+          "fear": 0.45,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.14,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 123,
+    "results": [
+      {
+        "confidences": {
+          "anger": 46.15,
+          "disgust": 52.91,
+          "fear": 0.56,
+          "happy": 0.1,
+          "neutral": 0.07,
+          "sad": 0.19,
+          "surprise": 0.04
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 124,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.61,
+          "disgust": 39.46,
+          "fear": 0.58,
+          "happy": 0.08,
+          "neutral": 0.05,
+          "sad": 0.19,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 125,
+    "results": [
+      {
+        "confidences": {
+          "anger": 56.84,
+          "disgust": 42.48,
+          "fear": 0.43,
+          "happy": 0.07,
+          "neutral": 0.04,
+          "sad": 0.13,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 126,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.74,
+          "disgust": 25.65,
+          "fear": 0.41,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.1,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 127,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.76,
+          "disgust": 22.49,
+          "fear": 0.51,
+          "happy": 0.07,
+          "neutral": 0.03,
+          "sad": 0.12,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 128,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.68,
+          "disgust": 36.82,
+          "fear": 0.32,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 129,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.11,
+          "disgust": 41.31,
+          "fear": 0.33,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.13,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 130,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.35,
+          "disgust": 41.08,
+          "fear": 0.33,
+          "happy": 0.07,
+          "neutral": 0.03,
+          "sad": 0.12,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 131,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.71,
+          "disgust": 27.58,
+          "fear": 0.45,
+          "happy": 0.08,
+          "neutral": 0.04,
+          "sad": 0.11,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 132,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.03,
+          "disgust": 40.39,
+          "fear": 0.38,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.11,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 133,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.15,
+          "disgust": 39.15,
+          "fear": 0.41,
+          "happy": 0.07,
+          "neutral": 0.04,
+          "sad": 0.17,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 134,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.38,
+          "disgust": 25.62,
+          "fear": 0.77,
+          "happy": 0.06,
+          "neutral": 0.02,
+          "sad": 0.13,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 135,
+    "results": [
+      {
+        "confidences": {
+          "anger": 53.81,
+          "disgust": 45.5,
+          "fear": 0.43,
+          "happy": 0.07,
+          "neutral": 0.04,
+          "sad": 0.13,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 136,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.16,
+          "disgust": 18.11,
+          "fear": 0.54,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 137,
+    "results": [
+      {
+        "confidences": {
+          "anger": 47.37,
+          "disgust": 51.93,
+          "fear": 0.44,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.17,
+          "surprise": 0.01
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 138,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.07,
+          "disgust": 42.19,
+          "fear": 0.49,
+          "happy": 0.06,
+          "neutral": 0.03,
+          "sad": 0.15,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 139,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.8,
+          "disgust": 38.4,
+          "fear": 0.52,
+          "happy": 0.06,
+          "neutral": 0.03,
+          "sad": 0.18,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 140,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.83,
+          "disgust": 28.22,
+          "fear": 0.71,
+          "happy": 0.07,
+          "neutral": 0.03,
+          "sad": 0.13,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 141,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.69,
+          "disgust": 21.09,
+          "fear": 1.76,
+          "happy": 0.1,
+          "neutral": 0.05,
+          "sad": 0.27,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 142,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.63,
+          "disgust": 29.75,
+          "fear": 0.4,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.12,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 143,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.27,
+          "disgust": 37.85,
+          "fear": 0.52,
+          "happy": 0.09,
+          "neutral": 0.06,
+          "sad": 0.16,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 144,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.69,
+          "disgust": 37.81,
+          "fear": 0.28,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.14,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 145,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.35,
+          "disgust": 30.0,
+          "fear": 0.42,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.14,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 146,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.89,
+          "disgust": 50.54,
+          "fear": 0.33,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.15,
+          "surprise": 0.01
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 147,
+    "results": [
+      {
+        "confidences": {
+          "anger": 52.45,
+          "disgust": 46.93,
+          "fear": 0.34,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.17,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 148,
+    "results": [
+      {
+        "confidences": {
+          "anger": 53.54,
+          "disgust": 45.47,
+          "fear": 0.59,
+          "happy": 0.1,
+          "neutral": 0.06,
+          "sad": 0.21,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 149,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.43,
+          "disgust": 26.87,
+          "fear": 0.45,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.14,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 150,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.74,
+          "disgust": 36.63,
+          "fear": 0.41,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.13,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 151,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.22,
+          "disgust": 39.17,
+          "fear": 0.34,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.16,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 152,
+    "results": [
+      {
+        "confidences": {
+          "anger": 49.07,
+          "disgust": 49.85,
+          "fear": 0.62,
+          "happy": 0.1,
+          "neutral": 0.07,
+          "sad": 0.25,
+          "surprise": 0.04
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 153,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.13,
+          "disgust": 29.32,
+          "fear": 0.33,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.12,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 154,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.17,
+          "disgust": 34.12,
+          "fear": 0.44,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.17,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 155,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.19,
+          "disgust": 24.14,
+          "fear": 0.41,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.15,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 156,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.14,
+          "disgust": 26.9,
+          "fear": 0.6,
+          "happy": 0.09,
+          "neutral": 0.06,
+          "sad": 0.19,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 157,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.68,
+          "disgust": 40.34,
+          "fear": 0.53,
+          "happy": 0.12,
+          "neutral": 0.09,
+          "sad": 0.21,
+          "surprise": 0.05
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 158,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.69,
+          "disgust": 36.2,
+          "fear": 0.64,
+          "happy": 0.1,
+          "neutral": 0.08,
+          "sad": 0.24,
+          "surprise": 0.05
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 159,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.63,
+          "disgust": 40.91,
+          "fear": 0.89,
+          "happy": 0.1,
+          "neutral": 0.1,
+          "sad": 0.32,
+          "surprise": 0.06
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 160,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.19,
+          "disgust": 43.2,
+          "fear": 0.99,
+          "happy": 0.1,
+          "neutral": 0.1,
+          "sad": 0.36,
+          "surprise": 0.06
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 161,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.91,
+          "disgust": 43.41,
+          "fear": 0.32,
+          "happy": 0.11,
+          "neutral": 0.06,
+          "sad": 0.15,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 162,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.48,
+          "disgust": 34.18,
+          "fear": 0.87,
+          "happy": 0.1,
+          "neutral": 0.07,
+          "sad": 0.26,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 163,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.13,
+          "disgust": 40.78,
+          "fear": 0.65,
+          "happy": 0.11,
+          "neutral": 0.07,
+          "sad": 0.22,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 164,
+    "results": []
+  },
+  {
+    "frame": 165,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.0,
+          "disgust": 22.34,
+          "fear": 1.09,
+          "happy": 0.09,
+          "neutral": 0.07,
+          "sad": 0.34,
+          "surprise": 0.05
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 166,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.88,
+          "disgust": 28.02,
+          "fear": 0.65,
+          "happy": 0.11,
+          "neutral": 0.05,
+          "sad": 0.25,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 167,
+    "results": []
+  },
+  {
+    "frame": 168,
+    "results": []
+  },
+  {
+    "frame": 169,
+    "results": []
+  },
+  {
+    "frame": 170,
+    "results": []
+  },
+  {
+    "frame": 171,
+    "results": []
+  },
+  {
+    "frame": 172,
+    "results": []
+  },
+  {
+    "frame": 173,
+    "results": []
+  },
+  {
+    "frame": 174,
+    "results": []
+  },
+  {
+    "frame": 175,
+    "results": []
+  },
+  {
+    "frame": 176,
+    "results": []
+  },
+  {
+    "frame": 177,
+    "results": []
+  },
+  {
+    "frame": 178,
+    "results": []
+  },
+  {
+    "frame": 179,
+    "results": []
+  },
+  {
+    "frame": 180,
+    "results": []
+  },
+  {
+    "frame": 181,
+    "results": []
+  },
+  {
+    "frame": 182,
+    "results": []
+  },
+  {
+    "frame": 183,
+    "results": []
+  },
+  {
+    "frame": 184,
+    "results": []
+  },
+  {
+    "frame": 185,
+    "results": []
+  },
+  {
+    "frame": 186,
+    "results": []
+  },
+  {
+    "frame": 187,
+    "results": []
+  },
+  {
+    "frame": 188,
+    "results": []
+  },
+  {
+    "frame": 189,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.18,
+          "disgust": 34.79,
+          "fear": 0.57,
+          "happy": 0.13,
+          "neutral": 0.07,
+          "sad": 0.22,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 190,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.12,
+          "disgust": 22.12,
+          "fear": 0.45,
+          "happy": 0.09,
+          "neutral": 0.05,
+          "sad": 0.14,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 191,
+    "results": []
+  },
+  {
+    "frame": 192,
+    "results": []
+  },
+  {
+    "frame": 193,
+    "results": []
+  },
+  {
+    "frame": 194,
+    "results": []
+  },
+  {
+    "frame": 195,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.29,
+          "disgust": 29.96,
+          "fear": 0.4,
+          "happy": 0.1,
+          "neutral": 0.05,
+          "sad": 0.17,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 196,
+    "results": []
+  },
+  {
+    "frame": 197,
+    "results": []
+  },
+  {
+    "frame": 198,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.49,
+          "disgust": 37.85,
+          "fear": 0.3,
+          "happy": 0.12,
+          "neutral": 0.06,
+          "sad": 0.15,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 199,
+    "results": [
+      {
+        "confidences": {
+          "anger": 68.57,
+          "disgust": 30.72,
+          "fear": 0.41,
+          "happy": 0.1,
+          "neutral": 0.05,
+          "sad": 0.14,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 200,
+    "results": [
+      {
+        "confidences": {
+          "anger": 36.99,
+          "disgust": 62.2,
+          "fear": 0.42,
+          "happy": 0.11,
+          "neutral": 0.05,
+          "sad": 0.2,
+          "surprise": 0.03
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 201,
+    "results": [
+      {
+        "confidences": {
+          "anger": 32.55,
+          "disgust": 66.77,
+          "fear": 0.31,
+          "happy": 0.1,
+          "neutral": 0.05,
+          "sad": 0.2,
+          "surprise": 0.03
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 202,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.28,
+          "disgust": 35.37,
+          "fear": 0.69,
+          "happy": 0.15,
+          "neutral": 0.09,
+          "sad": 0.36,
+          "surprise": 0.06
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 203,
+    "results": [
+      {
+        "confidences": {
+          "anger": 45.42,
+          "disgust": 53.66,
+          "fear": 0.44,
+          "happy": 0.11,
+          "neutral": 0.08,
+          "sad": 0.24,
+          "surprise": 0.05
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 204,
+    "results": []
+  },
+  {
+    "frame": 205,
+    "results": []
+  },
+  {
+    "frame": 206,
+    "results": []
+  },
+  {
+    "frame": 207,
+    "results": []
+  },
+  {
+    "frame": 208,
+    "results": []
+  },
+  {
+    "frame": 209,
+    "results": []
+  },
+  {
+    "frame": 210,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.95,
+          "disgust": 17.25,
+          "fear": 0.48,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.19,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 211,
+    "results": []
+  },
+  {
+    "frame": 212,
+    "results": []
+  },
+  {
+    "frame": 213,
+    "results": []
+  },
+  {
+    "frame": 214,
+    "results": [
+      {
+        "confidences": {
+          "anger": 51.37,
+          "disgust": 47.79,
+          "fear": 0.46,
+          "happy": 0.1,
+          "neutral": 0.05,
+          "sad": 0.21,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 215,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.32,
+          "disgust": 51.03,
+          "fear": 0.37,
+          "happy": 0.09,
+          "neutral": 0.03,
+          "sad": 0.13,
+          "surprise": 0.02
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 216,
+    "results": [
+      {
+        "confidences": {
+          "anger": 49.98,
+          "disgust": 49.29,
+          "fear": 0.43,
+          "happy": 0.1,
+          "neutral": 0.04,
+          "sad": 0.14,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 217,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.51,
+          "disgust": 25.79,
+          "fear": 0.46,
+          "happy": 0.06,
+          "neutral": 0.03,
+          "sad": 0.13,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 218,
+    "results": [
+      {
+        "confidences": {
+          "anger": 46.07,
+          "disgust": 53.3,
+          "fear": 0.35,
+          "happy": 0.1,
+          "neutral": 0.03,
+          "sad": 0.14,
+          "surprise": 0.02
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 219,
+    "results": [
+      {
+        "confidences": {
+          "anger": 54.89,
+          "disgust": 44.47,
+          "fear": 0.37,
+          "happy": 0.08,
+          "neutral": 0.03,
+          "sad": 0.13,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 220,
+    "results": []
+  },
+  {
+    "frame": 221,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.24,
+          "disgust": 41.73,
+          "fear": 0.57,
+          "happy": 0.08,
+          "neutral": 0.08,
+          "sad": 0.26,
+          "surprise": 0.05
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 222,
+    "results": [
+      {
+        "confidences": {
+          "anger": 50.55,
+          "disgust": 48.62,
+          "fear": 0.39,
+          "happy": 0.09,
+          "neutral": 0.07,
+          "sad": 0.23,
+          "surprise": 0.04
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 223,
+    "results": [
+      {
+        "confidences": {
+          "anger": 50.26,
+          "disgust": 48.91,
+          "fear": 0.43,
+          "happy": 0.09,
+          "neutral": 0.06,
+          "sad": 0.23,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 224,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.3,
+          "disgust": 51.01,
+          "fear": 0.33,
+          "happy": 0.07,
+          "neutral": 0.05,
+          "sad": 0.22,
+          "surprise": 0.02
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 225,
+    "results": [
+      {
+        "confidences": {
+          "anger": 63.23,
+          "disgust": 35.99,
+          "fear": 0.42,
+          "happy": 0.07,
+          "neutral": 0.07,
+          "sad": 0.19,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 226,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.77,
+          "disgust": 27.64,
+          "fear": 0.35,
+          "happy": 0.04,
+          "neutral": 0.04,
+          "sad": 0.14,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 227,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.89,
+          "disgust": 50.63,
+          "fear": 0.22,
+          "happy": 0.05,
+          "neutral": 0.04,
+          "sad": 0.15,
+          "surprise": 0.01
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 228,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.49,
+          "disgust": 34.98,
+          "fear": 0.23,
+          "happy": 0.06,
+          "neutral": 0.06,
+          "sad": 0.15,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 229,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.08,
+          "disgust": 30.45,
+          "fear": 0.24,
+          "happy": 0.05,
+          "neutral": 0.04,
+          "sad": 0.13,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 230,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.64,
+          "disgust": 34.89,
+          "fear": 0.25,
+          "happy": 0.04,
+          "neutral": 0.03,
+          "sad": 0.14,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 231,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.73,
+          "disgust": 41.83,
+          "fear": 0.19,
+          "happy": 0.05,
+          "neutral": 0.04,
+          "sad": 0.14,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 232,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.73,
+          "disgust": 37.68,
+          "fear": 0.28,
+          "happy": 0.06,
+          "neutral": 0.05,
+          "sad": 0.18,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 233,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.35,
+          "disgust": 43.92,
+          "fear": 0.36,
+          "happy": 0.07,
+          "neutral": 0.06,
+          "sad": 0.21,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 234,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.93,
+          "disgust": 34.37,
+          "fear": 0.38,
+          "happy": 0.05,
+          "neutral": 0.05,
+          "sad": 0.19,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 235,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.38,
+          "disgust": 26.23,
+          "fear": 0.21,
+          "happy": 0.04,
+          "neutral": 0.03,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 236,
+    "results": [
+      {
+        "confidences": {
+          "anger": 44.25,
+          "disgust": 55.13,
+          "fear": 0.28,
+          "happy": 0.07,
+          "neutral": 0.06,
+          "sad": 0.19,
+          "surprise": 0.02
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 237,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.56,
+          "disgust": 41.74,
+          "fear": 0.37,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.2,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 238,
+    "results": [
+      {
+        "confidences": {
+          "anger": 45.77,
+          "disgust": 53.65,
+          "fear": 0.29,
+          "happy": 0.05,
+          "neutral": 0.04,
+          "sad": 0.17,
+          "surprise": 0.02
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 239,
+    "results": [
+      {
+        "confidences": {
+          "anger": 53.59,
+          "disgust": 45.77,
+          "fear": 0.33,
+          "happy": 0.07,
+          "neutral": 0.04,
+          "sad": 0.19,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 240,
+    "results": [
+      {
+        "confidences": {
+          "anger": 46.26,
+          "disgust": 53.04,
+          "fear": 0.3,
+          "happy": 0.07,
+          "neutral": 0.05,
+          "sad": 0.25,
+          "surprise": 0.02
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 241,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.29,
+          "disgust": 20.18,
+          "fear": 0.34,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.13,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 242,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.19,
+          "disgust": 19.35,
+          "fear": 0.3,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.11,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 243,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.02,
+          "disgust": 42.21,
+          "fear": 0.41,
+          "happy": 0.07,
+          "neutral": 0.04,
+          "sad": 0.24,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 244,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.47,
+          "disgust": 17.88,
+          "fear": 0.45,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.13,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 245,
+    "results": [
+      {
+        "confidences": {
+          "anger": 50.26,
+          "disgust": 49.17,
+          "fear": 0.31,
+          "happy": 0.05,
+          "neutral": 0.03,
+          "sad": 0.16,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 246,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.83,
+          "disgust": 37.33,
+          "fear": 0.51,
+          "happy": 0.06,
+          "neutral": 0.03,
+          "sad": 0.22,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 247,
+    "results": [
+      {
+        "confidences": {
+          "anger": 40.22,
+          "disgust": 59.34,
+          "fear": 0.21,
+          "happy": 0.07,
+          "neutral": 0.03,
+          "sad": 0.12,
+          "surprise": 0.01
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 248,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.06,
+          "disgust": 51.59,
+          "fear": 0.19,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.09,
+          "surprise": 0.01
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 249,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.49,
+          "disgust": 28.02,
+          "fear": 0.3,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.11,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 250,
+    "results": [
+      {
+        "confidences": {
+          "anger": 34.9,
+          "disgust": 64.67,
+          "fear": 0.23,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.12,
+          "surprise": 0.01
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 251,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.99,
+          "disgust": 14.58,
+          "fear": 0.29,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 252,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.34,
+          "disgust": 21.28,
+          "fear": 0.23,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.1,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 253,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.57,
+          "disgust": 23.17,
+          "fear": 0.16,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 254,
+    "results": [
+      {
+        "confidences": {
+          "anger": 50.32,
+          "disgust": 49.44,
+          "fear": 0.12,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 255,
+    "results": [
+      {
+        "confidences": {
+          "anger": 26.08,
+          "disgust": 73.72,
+          "fear": 0.09,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 256,
+    "results": [
+      {
+        "confidences": {
+          "anger": 52.86,
+          "disgust": 46.88,
+          "fear": 0.13,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.09,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 257,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.23,
+          "disgust": 37.51,
+          "fear": 0.13,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 258,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.16,
+          "disgust": 24.49,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 259,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.68,
+          "disgust": 28.05,
+          "fear": 0.16,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 260,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.95,
+          "disgust": 38.72,
+          "fear": 0.21,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 261,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.37,
+          "disgust": 41.39,
+          "fear": 0.13,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 262,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.45,
+          "disgust": 41.26,
+          "fear": 0.17,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 263,
+    "results": [
+      {
+        "confidences": {
+          "anger": 29.61,
+          "disgust": 70.23,
+          "fear": 0.07,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 264,
+    "results": [
+      {
+        "confidences": {
+          "anger": 31.77,
+          "disgust": 68.0,
+          "fear": 0.11,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 265,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.84,
+          "disgust": 39.9,
+          "fear": 0.15,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 266,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.54,
+          "disgust": 51.24,
+          "fear": 0.12,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 267,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.99,
+          "disgust": 33.71,
+          "fear": 0.2,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 268,
+    "results": [
+      {
+        "confidences": {
+          "anger": 36.67,
+          "disgust": 63.13,
+          "fear": 0.1,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 269,
+    "results": [
+      {
+        "confidences": {
+          "anger": 36.04,
+          "disgust": 63.77,
+          "fear": 0.11,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 270,
+    "results": [
+      {
+        "confidences": {
+          "anger": 34.9,
+          "disgust": 64.91,
+          "fear": 0.1,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 271,
+    "results": [
+      {
+        "confidences": {
+          "anger": 33.74,
+          "disgust": 66.09,
+          "fear": 0.09,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 272,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.31,
+          "disgust": 24.25,
+          "fear": 0.36,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 273,
+    "results": [
+      {
+        "confidences": {
+          "anger": 66.11,
+          "disgust": 33.44,
+          "fear": 0.32,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 274,
+    "results": [
+      {
+        "confidences": {
+          "anger": 54.63,
+          "disgust": 45.05,
+          "fear": 0.22,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      },
+      {
+        "confidences": {
+          "anger": 12.0,
+          "disgust": 10.69,
+          "fear": 13.42,
+          "happy": 13.3,
+          "neutral": 21.22,
+          "sad": 16.84,
+          "surprise": 12.53
+        },
+        "emotion": "neutral",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "frame": 275,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.56,
+          "disgust": 16.16,
+          "fear": 0.22,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 276,
+    "results": [
+      {
+        "confidences": {
+          "anger": 87.56,
+          "disgust": 12.01,
+          "fear": 0.35,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 277,
+    "results": [
+      {
+        "confidences": {
+          "anger": 41.77,
+          "disgust": 57.98,
+          "fear": 0.15,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 278,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.16,
+          "disgust": 11.29,
+          "fear": 0.48,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 279,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.38,
+          "disgust": 22.24,
+          "fear": 0.32,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 280,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.57,
+          "disgust": 10.01,
+          "fear": 0.36,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 281,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.93,
+          "disgust": 14.11,
+          "fear": 0.86,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 282,
+    "results": [
+      {
+        "confidences": {
+          "anger": 68.53,
+          "disgust": 30.98,
+          "fear": 0.4,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 283,
+    "results": [
+      {
+        "confidences": {
+          "anger": 58.46,
+          "disgust": 41.1,
+          "fear": 0.33,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 284,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.58,
+          "disgust": 14.08,
+          "fear": 0.29,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 285,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.52,
+          "disgust": 22.26,
+          "fear": 0.17,
+          "happy": 0.03,
+          "neutral": 0.0,
+          "sad": 0.02,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 286,
+    "results": [
+      {
+        "confidences": {
+          "anger": 94.5,
+          "disgust": 5.16,
+          "fear": 0.29,
+          "happy": 0.03,
+          "neutral": 0.0,
+          "sad": 0.02,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 287,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.27,
+          "disgust": 13.13,
+          "fear": 0.52,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 288,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.01,
+          "disgust": 19.67,
+          "fear": 0.26,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 289,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.31,
+          "disgust": 20.41,
+          "fear": 0.23,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.02,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 290,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.97,
+          "disgust": 21.77,
+          "fear": 0.21,
+          "happy": 0.03,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 291,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.9,
+          "disgust": 20.78,
+          "fear": 0.27,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 292,
+    "results": [
+      {
+        "confidences": {
+          "anger": 93.92,
+          "disgust": 5.83,
+          "fear": 0.2,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.01,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 293,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.58,
+          "disgust": 18.14,
+          "fear": 0.23,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.02,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 294,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.7,
+          "disgust": 10.98,
+          "fear": 0.27,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.02,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 295,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.77,
+          "disgust": 13.85,
+          "fear": 0.33,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 296,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.41,
+          "disgust": 28.2,
+          "fear": 0.31,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 297,
+    "results": [
+      {
+        "confidences": {
+          "anger": 68.76,
+          "disgust": 30.66,
+          "fear": 0.5,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 298,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.54,
+          "disgust": 8.73,
+          "fear": 0.67,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 299,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.78,
+          "disgust": 43.68,
+          "fear": 0.45,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 300,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.14,
+          "disgust": 17.95,
+          "fear": 0.8,
+          "happy": 0.03,
+          "neutral": 0.0,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 301,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.89,
+          "disgust": 8.16,
+          "fear": 0.87,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 302,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.56,
+          "disgust": 39.99,
+          "fear": 0.36,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 303,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.68,
+          "disgust": 38.9,
+          "fear": 0.32,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 304,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.95,
+          "disgust": 18.4,
+          "fear": 0.55,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 305,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.18,
+          "disgust": 27.34,
+          "fear": 0.39,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 306,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.04,
+          "disgust": 20.45,
+          "fear": 0.41,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 307,
+    "results": [
+      {
+        "confidences": {
+          "anger": 56.16,
+          "disgust": 43.44,
+          "fear": 0.31,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 308,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.84,
+          "disgust": 38.81,
+          "fear": 0.27,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 309,
+    "results": [
+      {
+        "confidences": {
+          "anger": 61.78,
+          "disgust": 37.86,
+          "fear": 0.26,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 310,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.08,
+          "disgust": 22.41,
+          "fear": 0.41,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 311,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.25,
+          "disgust": 27.36,
+          "fear": 0.3,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 312,
+    "results": [
+      {
+        "confidences": {
+          "anger": 72.62,
+          "disgust": 27.01,
+          "fear": 0.29,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 313,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.57,
+          "disgust": 29.05,
+          "fear": 0.29,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 314,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.08,
+          "disgust": 42.62,
+          "fear": 0.2,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 315,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.31,
+          "disgust": 19.35,
+          "fear": 0.26,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 316,
+    "results": [
+      {
+        "confidences": {
+          "anger": 59.37,
+          "disgust": 40.33,
+          "fear": 0.19,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 317,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.03,
+          "disgust": 20.66,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 318,
+    "results": [
+      {
+        "confidences": {
+          "anger": 66.91,
+          "disgust": 32.76,
+          "fear": 0.22,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 319,
+    "results": [
+      {
+        "confidences": {
+          "anger": 56.25,
+          "disgust": 43.49,
+          "fear": 0.14,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.09,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 320,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.26,
+          "disgust": 37.48,
+          "fear": 0.16,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 321,
+    "results": [
+      {
+        "confidences": {
+          "anger": 66.52,
+          "disgust": 33.13,
+          "fear": 0.23,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 322,
+    "results": [
+      {
+        "confidences": {
+          "anger": 71.91,
+          "disgust": 27.79,
+          "fear": 0.19,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 323,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.45,
+          "disgust": 15.2,
+          "fear": 0.21,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.1,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 324,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.04,
+          "disgust": 35.7,
+          "fear": 0.14,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 325,
+    "results": [
+      {
+        "confidences": {
+          "anger": 54.0,
+          "disgust": 45.76,
+          "fear": 0.14,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 326,
+    "results": [
+      {
+        "confidences": {
+          "anger": 62.57,
+          "disgust": 37.12,
+          "fear": 0.2,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 327,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.71,
+          "disgust": 35.05,
+          "fear": 0.11,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 328,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.41,
+          "disgust": 32.14,
+          "fear": 0.31,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 329,
+    "results": [
+      {
+        "confidences": {
+          "anger": 56.6,
+          "disgust": 43.18,
+          "fear": 0.12,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 330,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.76,
+          "disgust": 25.82,
+          "fear": 0.28,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 331,
+    "results": [
+      {
+        "confidences": {
+          "anger": 50.24,
+          "disgust": 49.47,
+          "fear": 0.13,
+          "happy": 0.06,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 332,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.93,
+          "disgust": 18.75,
+          "fear": 0.19,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 333,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.25,
+          "disgust": 22.47,
+          "fear": 0.15,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 334,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.28,
+          "disgust": 32.44,
+          "fear": 0.16,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 335,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.16,
+          "disgust": 30.59,
+          "fear": 0.13,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 336,
+    "results": [
+      {
+        "confidences": {
+          "anger": 57.12,
+          "disgust": 42.64,
+          "fear": 0.11,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 337,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.64,
+          "disgust": 22.06,
+          "fear": 0.16,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 338,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.45,
+          "disgust": 20.27,
+          "fear": 0.15,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 339,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.98,
+          "disgust": 28.53,
+          "fear": 0.29,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.14,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 340,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.14,
+          "disgust": 19.56,
+          "fear": 0.16,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 341,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.39,
+          "disgust": 44.32,
+          "fear": 0.12,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 342,
+    "results": [
+      {
+        "confidences": {
+          "anger": 64.93,
+          "disgust": 34.75,
+          "fear": 0.17,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 343,
+    "results": [
+      {
+        "confidences": {
+          "anger": 54.2,
+          "disgust": 45.55,
+          "fear": 0.11,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 344,
+    "results": [
+      {
+        "confidences": {
+          "anger": 66.31,
+          "disgust": 33.0,
+          "fear": 0.37,
+          "happy": 0.08,
+          "neutral": 0.06,
+          "sad": 0.15,
+          "surprise": 0.03
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 345,
+    "results": []
+  },
+  {
+    "frame": 346,
+    "results": [
+      {
+        "confidences": {
+          "anger": 48.46,
+          "disgust": 51.24,
+          "fear": 0.13,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.12,
+          "surprise": 0.01
+        },
+        "emotion": "disgust",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 347,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.39,
+          "disgust": 32.3,
+          "fear": 0.16,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 348,
+    "results": [
+      {
+        "confidences": {
+          "anger": 60.85,
+          "disgust": 38.86,
+          "fear": 0.14,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 349,
+    "results": [
+      {
+        "confidences": {
+          "anger": 67.28,
+          "disgust": 32.19,
+          "fear": 0.39,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.09,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 350,
+    "results": [
+      {
+        "confidences": {
+          "anger": 56.23,
+          "disgust": 43.4,
+          "fear": 0.17,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.14,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 351,
+    "results": [
+      {
+        "confidences": {
+          "anger": 69.95,
+          "disgust": 29.56,
+          "fear": 0.28,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.09,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 352,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.29,
+          "disgust": 19.25,
+          "fear": 0.31,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.1,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 353,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.17,
+          "disgust": 13.44,
+          "fear": 0.25,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 354,
+    "results": [
+      {
+        "confidences": {
+          "anger": 55.33,
+          "disgust": 44.3,
+          "fear": 0.17,
+          "happy": 0.06,
+          "neutral": 0.04,
+          "sad": 0.08,
+          "surprise": 0.02
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 355,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.75,
+          "disgust": 20.9,
+          "fear": 0.21,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 356,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.12,
+          "disgust": 16.42,
+          "fear": 0.31,
+          "happy": 0.03,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 357,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.65,
+          "disgust": 20.83,
+          "fear": 0.39,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 358,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.14,
+          "disgust": 20.18,
+          "fear": 0.54,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.09,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 359,
+    "results": [
+      {
+        "confidences": {
+          "anger": 70.85,
+          "disgust": 28.8,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 360,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.65,
+          "disgust": 23.01,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.02,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 361,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.57,
+          "disgust": 13.79,
+          "fear": 0.53,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 362,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.42,
+          "disgust": 12.99,
+          "fear": 0.47,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.09,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 363,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.63,
+          "disgust": 21.04,
+          "fear": 0.24,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 364,
+    "results": [
+      {
+        "confidences": {
+          "anger": 87.28,
+          "disgust": 12.27,
+          "fear": 0.35,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 365,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.36,
+          "disgust": 15.27,
+          "fear": 0.28,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 366,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.73,
+          "disgust": 10.96,
+          "fear": 0.24,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 367,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.62,
+          "disgust": 14.07,
+          "fear": 0.23,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 368,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.39,
+          "disgust": 11.34,
+          "fear": 0.2,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 369,
+    "results": [
+      {
+        "confidences": {
+          "anger": 87.37,
+          "disgust": 12.29,
+          "fear": 0.25,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 370,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.98,
+          "disgust": 16.69,
+          "fear": 0.26,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 371,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.57,
+          "disgust": 17.11,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 372,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.93,
+          "disgust": 13.79,
+          "fear": 0.21,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 373,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.26,
+          "disgust": 19.46,
+          "fear": 0.21,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 374,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.35,
+          "disgust": 9.35,
+          "fear": 0.24,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 375,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.01,
+          "disgust": 14.66,
+          "fear": 0.25,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 376,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.15,
+          "disgust": 11.55,
+          "fear": 0.21,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 377,
+    "results": [
+      {
+        "confidences": {
+          "anger": 91.87,
+          "disgust": 7.94,
+          "fear": 0.13,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 378,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.81,
+          "disgust": 18.89,
+          "fear": 0.23,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 379,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.04,
+          "disgust": 14.72,
+          "fear": 0.18,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 380,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.46,
+          "disgust": 21.2,
+          "fear": 0.27,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 381,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.25,
+          "disgust": 15.45,
+          "fear": 0.22,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 382,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.84,
+          "disgust": 15.94,
+          "fear": 0.14,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.03,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 383,
+    "results": [
+      {
+        "confidences": {
+          "anger": 87.0,
+          "disgust": 12.65,
+          "fear": 0.26,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 384,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.42,
+          "disgust": 11.25,
+          "fear": 0.26,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 385,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.2,
+          "disgust": 14.48,
+          "fear": 0.24,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 386,
+    "results": [
+      {
+        "confidences": {
+          "anger": 65.13,
+          "disgust": 34.53,
+          "fear": 0.23,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 387,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.62,
+          "disgust": 13.12,
+          "fear": 0.17,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 388,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.83,
+          "disgust": 14.89,
+          "fear": 0.18,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 389,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.25,
+          "disgust": 25.42,
+          "fear": 0.24,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 390,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.75,
+          "disgust": 13.97,
+          "fear": 0.21,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 391,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.89,
+          "disgust": 12.75,
+          "fear": 0.25,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 392,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.18,
+          "disgust": 13.47,
+          "fear": 0.26,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 393,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.11,
+          "disgust": 11.49,
+          "fear": 0.3,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 394,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.33,
+          "disgust": 24.3,
+          "fear": 0.26,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 395,
+    "results": [
+      {
+        "confidences": {
+          "anger": 86.99,
+          "disgust": 12.59,
+          "fear": 0.31,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 396,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.29,
+          "disgust": 20.36,
+          "fear": 0.24,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 397,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.59,
+          "disgust": 10.04,
+          "fear": 0.28,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 398,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.94,
+          "disgust": 6.74,
+          "fear": 0.25,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 399,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.88,
+          "disgust": 24.76,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 400,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.28,
+          "disgust": 16.4,
+          "fear": 0.21,
+          "happy": 0.03,
+          "neutral": 0.02,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 401,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.44,
+          "disgust": 11.23,
+          "fear": 0.24,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 402,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.27,
+          "disgust": 19.4,
+          "fear": 0.2,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 403,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.15,
+          "disgust": 17.4,
+          "fear": 0.33,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.09,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 404,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.88,
+          "disgust": 16.83,
+          "fear": 0.18,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 405,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.22,
+          "disgust": 18.44,
+          "fear": 0.23,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 406,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.52,
+          "disgust": 9.13,
+          "fear": 0.26,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 407,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.51,
+          "disgust": 16.11,
+          "fear": 0.25,
+          "happy": 0.03,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 408,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.1,
+          "disgust": 17.58,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 409,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.3,
+          "disgust": 10.37,
+          "fear": 0.23,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 410,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.87,
+          "disgust": 10.78,
+          "fear": 0.24,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 411,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.42,
+          "disgust": 10.28,
+          "fear": 0.17,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.1,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 412,
+    "results": [
+      {
+        "confidences": {
+          "anger": 91.05,
+          "disgust": 8.64,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 413,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.17,
+          "disgust": 19.55,
+          "fear": 0.14,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 414,
+    "results": [
+      {
+        "confidences": {
+          "anger": 87.48,
+          "disgust": 12.2,
+          "fear": 0.2,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 415,
+    "results": [
+      {
+        "confidences": {
+          "anger": 73.78,
+          "disgust": 25.91,
+          "fear": 0.14,
+          "happy": 0.06,
+          "neutral": 0.03,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 416,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.87,
+          "disgust": 20.77,
+          "fear": 0.22,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 417,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.38,
+          "disgust": 22.3,
+          "fear": 0.19,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 418,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.69,
+          "disgust": 19.03,
+          "fear": 0.18,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 419,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.11,
+          "disgust": 7.63,
+          "fear": 0.17,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 420,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.4,
+          "disgust": 17.25,
+          "fear": 0.24,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 421,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.06,
+          "disgust": 20.66,
+          "fear": 0.13,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 422,
+    "results": [
+      {
+        "confidences": {
+          "anger": 93.48,
+          "disgust": 6.24,
+          "fear": 0.19,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 423,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.02,
+          "disgust": 18.7,
+          "fear": 0.17,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 424,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.57,
+          "disgust": 10.12,
+          "fear": 0.21,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 425,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.66,
+          "disgust": 11.03,
+          "fear": 0.2,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 426,
+    "results": [
+      {
+        "confidences": {
+          "anger": 74.29,
+          "disgust": 25.39,
+          "fear": 0.16,
+          "happy": 0.05,
+          "neutral": 0.02,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 427,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.94,
+          "disgust": 17.74,
+          "fear": 0.21,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 428,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.29,
+          "disgust": 16.45,
+          "fear": 0.15,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 429,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.3,
+          "disgust": 20.4,
+          "fear": 0.19,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 430,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.07,
+          "disgust": 14.66,
+          "fear": 0.17,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 431,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.62,
+          "disgust": 16.04,
+          "fear": 0.23,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 432,
+    "results": [
+      {
+        "confidences": {
+          "anger": 91.99,
+          "disgust": 7.71,
+          "fear": 0.23,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 433,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.73,
+          "disgust": 20.01,
+          "fear": 0.13,
+          "happy": 0.05,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 434,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.65,
+          "disgust": 17.06,
+          "fear": 0.18,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 435,
+    "results": [
+      {
+        "confidences": {
+          "anger": 79.21,
+          "disgust": 20.53,
+          "fear": 0.16,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 436,
+    "results": [
+      {
+        "confidences": {
+          "anger": 83.92,
+          "disgust": 15.76,
+          "fear": 0.22,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 437,
+    "results": [
+      {
+        "confidences": {
+          "anger": 91.18,
+          "disgust": 8.52,
+          "fear": 0.2,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 438,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.44,
+          "disgust": 19.26,
+          "fear": 0.19,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 439,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.46,
+          "disgust": 18.23,
+          "fear": 0.2,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 440,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.29,
+          "disgust": 11.44,
+          "fear": 0.19,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 441,
+    "results": [
+      {
+        "confidences": {
+          "anger": 84.17,
+          "disgust": 15.5,
+          "fear": 0.23,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 442,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.62,
+          "disgust": 7.04,
+          "fear": 0.25,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 443,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.31,
+          "disgust": 23.41,
+          "fear": 0.17,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 444,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.36,
+          "disgust": 17.24,
+          "fear": 0.27,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.08,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 445,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.7,
+          "disgust": 24.05,
+          "fear": 0.13,
+          "happy": 0.05,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 446,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.87,
+          "disgust": 6.73,
+          "fear": 0.29,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 447,
+    "results": [
+      {
+        "confidences": {
+          "anger": 81.75,
+          "disgust": 17.98,
+          "fear": 0.16,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 448,
+    "results": [
+      {
+        "confidences": {
+          "anger": 88.03,
+          "disgust": 11.71,
+          "fear": 0.16,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 449,
+    "results": [
+      {
+        "confidences": {
+          "anger": 93.69,
+          "disgust": 6.07,
+          "fear": 0.15,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 450,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.53,
+          "disgust": 7.2,
+          "fear": 0.19,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 451,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.62,
+          "disgust": 24.12,
+          "fear": 0.15,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 452,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.71,
+          "disgust": 20.98,
+          "fear": 0.2,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 453,
+    "results": [
+      {
+        "confidences": {
+          "anger": 89.91,
+          "disgust": 9.78,
+          "fear": 0.21,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 454,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.58,
+          "disgust": 14.12,
+          "fear": 0.19,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.07,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 455,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.83,
+          "disgust": 16.96,
+          "fear": 0.12,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 456,
+    "results": [
+      {
+        "confidences": {
+          "anger": 82.1,
+          "disgust": 17.51,
+          "fear": 0.25,
+          "happy": 0.04,
+          "neutral": 0.02,
+          "sad": 0.07,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 457,
+    "results": [
+      {
+        "confidences": {
+          "anger": 78.38,
+          "disgust": 21.38,
+          "fear": 0.15,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 458,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.72,
+          "disgust": 6.94,
+          "fear": 0.24,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 459,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.33,
+          "disgust": 9.44,
+          "fear": 0.16,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 460,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.06,
+          "disgust": 9.72,
+          "fear": 0.15,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 461,
+    "results": [
+      {
+        "confidences": {
+          "anger": 85.3,
+          "disgust": 14.48,
+          "fear": 0.13,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 462,
+    "results": [
+      {
+        "confidences": {
+          "anger": 77.5,
+          "disgust": 22.2,
+          "fear": 0.18,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.06,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 463,
+    "results": [
+      {
+        "confidences": {
+          "anger": 80.61,
+          "disgust": 19.17,
+          "fear": 0.12,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 464,
+    "results": [
+      {
+        "confidences": {
+          "anger": 75.02,
+          "disgust": 24.71,
+          "fear": 0.16,
+          "happy": 0.04,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 465,
+    "results": [
+      {
+        "confidences": {
+          "anger": 76.55,
+          "disgust": 23.23,
+          "fear": 0.12,
+          "happy": 0.03,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.01
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 466,
+    "results": [
+      {
+        "confidences": {
+          "anger": 90.14,
+          "disgust": 9.64,
+          "fear": 0.14,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.05,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 467,
+    "results": [
+      {
+        "confidences": {
+          "anger": 92.24,
+          "disgust": 7.54,
+          "fear": 0.15,
+          "happy": 0.02,
+          "neutral": 0.01,
+          "sad": 0.04,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "frame": 468,
+    "results": [
+      {
+        "confidences": {
+          "anger": 96.04,
+          "disgust": 3.75,
+          "fear": 0.16,
+          "happy": 0.02,
+          "neutral": 0.0,
+          "sad": 0.03,
+          "surprise": 0.0
+        },
+        "emotion": "anger",
+        "id": 1
+      }
+    ]
+  }
+]

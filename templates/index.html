@@ -27,10 +27,12 @@
     <form action="/upload" method="post" enctype="multipart/form-data">
         <label for="model">Select Model:</label>
         <select name="model" id="model" class="button" required>
-            <option value="affecnet7_epoch37_acc0.6557.pth">AffectNet7</option>
-            <option value="rafdb_epoch40_acc0.9071_bacc0.8534.pth">RAF-DB</option>
-            <option value="ferPlus_epoch80_acc0.8689_bacc0.726.pth">FER+</option>
-            <option value="combined_epoch31_acc0.7922.pth">Combined</option>
+            <option value="affecnet7_epoch37_acc0.6557.pth">DDAMFN AffectNet7</option>
+            <option value="rafdb_epoch40_acc0.9071_bacc0.8534.pth">DDAMFN RAF-DB</option>
+            <option value="ferPlus_epoch80_acc0.8689_bacc0.726.pth">DDAMFN FER+</option>
+            <option value="combined_epoch31_acc0.7922.pth">DDAMFN Combined</option>
+            <option value="affecnet7_epoch19_acc0.671.pth">DDAMFN++ AffectNet7</option>
+            <option value="rafdb_epoch20_acc0.9204_bacc0.8617.pth">DDAMFN++ RAF-DB</option>
         </select>
         <br><br>
         <label for="file-upload" class="button">Choose File</label>

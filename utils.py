@@ -35,6 +35,6 @@ def predict_emotions(face, model):
         if isinstance(output, tuple):
             output = output[0]
         confidences = torch.nn.functional.softmax(output, dim=1)[0]
-        emotions = ['happy', 'sad', 'neutral', 'fear', 'disgust', 'surprise', 'anger']
+        emotions = ['neutral', 'happy', 'sad', 'surprise', 'fear', 'disgust', 'anger']
         predicted_emotion = emotions[torch.argmax(confidences).item()]
         return predicted_emotion, confidences
