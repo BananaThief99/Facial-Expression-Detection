@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "emotion": "happy",
+        "confidences": {
+            "neutral": 0.01,
+            "happy": 99.91,
+            "sad": 0.0,
+            "surprise": 0.06,
+            "fear": 0.01,
+            "disgust": 0.01,
+            "anger": 0.0
+        }
+    }
+]
