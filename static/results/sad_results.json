@@ -3,13 +3,19 @@
         "id": 1,
         "emotion": "sad",
         "confidences": {
-            "neutral": 3.35,
+            "neutral": 2.39,
             "happy": 0.02,
-            "sad": 95.78,
-            "surprise": 0.29,
-            "fear": 0.37,
-            "disgust": 0.09,
-            "anger": 0.1
-        }
+            "sad": 96.81,
+            "surprise": 0.05,
+            "fear": 0.5,
+            "disgust": 0.1,
+            "anger": 0.12
+        },
+        "bbox": [
+            106,
+            49,
+            276,
+            296
+        ]
     }
 ]

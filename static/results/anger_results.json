@@ -1,0 +1,21 @@
+[
+    {
+        "id": 2,
+        "emotion": "anger",
+        "confidences": {
+            "neutral": 0.0,
+            "happy": 0.04,
+            "sad": 4.19,
+            "surprise": 0.02,
+            "fear": 32.95,
+            "disgust": 0.09,
+            "anger": 62.71
+        },
+        "bbox": [
+            76,
+            44,
+            152,
+            163
+        ]
+    }
+]
