@@ -1,10 +1,12 @@
-from flask import Flask, request, render_template, redirect, url_for, Response
+from flask import Flask, request, render_template, redirect, Response
 import os
-from processing import process_image, process_video
-from utils import load_model
+from process_media import process_image, process_video
+from emotion_detection import load_emotion_model
+from deepface import DeepFace
 
 app = Flask(__name__)
 
+# Configuration
 UPLOAD_FOLDER = 'uploaded_media'
 RESULTS_FOLDER = 'static/results'
 MODEL_FOLDER = 'models'
@@ -77,23 +79,24 @@ def upload_file():
     file.save(file_path)
 
     model_path = os.path.join(MODEL_FOLDER, model_name)
-    model = load_model(model_path)
+    model = load_emotion_model(model_path)
 
     if file.filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+        # Process image
         result_image_path, result_json_path, results = process_image(file_path, model)
-        print(results)
+        print(results)  # For debugging
         return render_template('results.html', media_type='image', 
                                image_path=result_image_path, 
                                json_path=result_json_path, 
                                results=results)
     elif file.filename.lower().endswith(('.mp4', '.avi')):
+        # Process video
         result_video_path, result_json_path = process_video(file_path, model)
         return render_template('results.html', media_type='video', 
                                video_path=result_video_path, 
                                json_path=result_json_path)
     else:
         return "Unsupported file type", 400
-
 
 if __name__ == '__main__':
     app.run(debug=True)
