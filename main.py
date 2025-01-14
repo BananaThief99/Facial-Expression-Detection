@@ -194,6 +194,66 @@ def delete_images():
         "image_count": len(database_content[person_id]['images'])
     }, 200
 
+@app.route('/delete_all_images', methods=['POST'])
+def delete_all_images():
+    person_id = request.form.get('person_id')
+    database_name = request.form.get('database_name')
+
+    if not person_id or not database_name:
+        print("Invalid request! Missing person_id or database_name.")  # Debug log
+        return {"success": False, "message": "Invalid request!"}, 400
+
+    db_folder_path = os.path.join(DATABASE_FOLDER, database_name)
+    json_file_path = os.path.join(db_folder_path, f"{database_name}.json")
+
+    print(f"Database folder path: {db_folder_path}")  # Debug log
+    print(f"JSON file path: {json_file_path}")  # Debug log
+
+    # Load the database JSON file
+    try:
+        with open(json_file_path, 'r') as f:
+            database_content = json.load(f)
+    except Exception as e:
+        print(f"Error loading JSON file: {e}")  # Debug log
+        return {"success": False, "message": "Error loading database JSON file!"}, 500
+
+    # Validate the person ID
+    if person_id not in database_content:
+        print(f"Invalid person_id: {person_id}")  # Debug log
+        return {"success": False, "message": "Invalid person ID!"}, 400
+
+    person_name = database_content[person_id]['name']
+    person_folder = os.path.join(db_folder_path, person_name)
+
+    print(f"Person folder: {person_folder}")  # Debug log
+
+    # Delete all images in the person's folder
+    deleted_images = []
+    for image in database_content[person_id]['images']:
+        image_path = os.path.join(person_folder, image)
+        print(f"Attempting to delete: {image_path}")  # Debug log
+        if os.path.exists(image_path):
+            os.remove(image_path)
+            deleted_images.append(image)
+        else:
+            print(f"Image not found: {image_path}")  # Debug log
+
+    # Clear the images list in the JSON file
+    database_content[person_id]['images'] = []
+
+    # Save the updated JSON file
+    try:
+        with open(json_file_path, 'w') as f:
+            json.dump(database_content, f, indent=4)
+    except Exception as e:
+        print(f"Error saving JSON file: {e}")  # Debug log
+        return {"success": False, "message": "Error saving database JSON file!"}, 500
+
+    print(f"Deleted images for person {person_id}: {deleted_images}")  # Debug log
+
+    return {"success": True}, 200
+
+
 
 
 @app.route('/get_table_data', methods=['GET'])

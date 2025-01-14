@@ -120,6 +120,95 @@
                 alert("An error occurred: " + error);
             });
         }
+
+        function deleteAllImages(personId, databaseName) {
+            console.log("deleteAllImages triggered");
+            if (!confirm("Are you sure you want to delete all images? This action cannot be undone.")) {
+                return; // Exit if the user cancels
+            }
+
+            const formData = new FormData();
+            formData.append("person_id", personId);
+            formData.append("database_name", databaseName);
+
+            fetch("/delete_all_images", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Update the image count in the table
+                    const imageCountCell = document.getElementById(`image-count-${personId}`);
+                    imageCountCell.textContent = "0";
+
+                    // Clear the Delete Images dropdown
+                    const selectElement = document.getElementById(`image-list-${personId}`);
+                    selectElement.innerHTML = "";
+
+                    alert("All images deleted successfully!");
+                } else {
+                    alert("Error deleting all images: " + data.message);
+                }
+            })
+            .catch(error => {
+                alert("An error occurred: " + error);
+            });
+        }
+
+        function deleteAllImagesFromAllRows() {
+            console.log("deleteAllImagesFromAllRows triggered"); // Debugging
+            alert("Delete All Images button clicked!"); // Debugging
+            
+
+            if (!confirm("Are you sure you want to delete all images for all rows? This action cannot be undone.")) {
+                return; // Exit if the user cancels
+            }
+
+            const rows = document.querySelectorAll("#table-body tr");
+            const databaseName = document.getElementById("database-name").value;
+
+            console.log("Rows to process:", rows.length);
+
+
+            rows.forEach(row => {
+                const personId = row.id.replace("row-", "");
+
+                const formData = new FormData();
+                formData.append("person_id", personId);
+                formData.append("database_name", databaseName);
+
+                fetch("/delete_all_images", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        console.log(`All images deleted for person ${personId}`); // Debug log
+
+                        // Update the image count to 0 and clear dropdown
+                        const imageCountCell = document.getElementById(`image-count-${personId}`);
+                        imageCountCell.textContent = "0";
+
+                        const selectElement = document.getElementById(`image-list-${personId}`);
+                        if (selectElement) {
+                            selectElement.innerHTML = ""; // Clear the dropdown if it exists
+                        }
+                    } else {
+                        console.error(`Error deleting all images for person ${personId}: ${data.message}`);
+                    }
+                })
+                .catch(error => {
+                    console.error("An error occurred: ", error);
+                });
+            });
+
+            alert("All images deleted for all rows.");
+        }
+
+
+
     </script>
 </head>
 <body>
@@ -136,7 +225,9 @@
     </form>
 
     <br><br>
+    
     {% if database_content %}
+        <button onclick="deleteAllImagesFromAllRows()">Delete All Images</button>
         <table border="1">
             <thead>
                 <tr>
@@ -147,12 +238,12 @@
                     <th>Delete Images</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-body">
                 {% for record_id, record in database_content.items() %}
-                    <tr>
+                    <tr id="row-{{ record_id }}"> <!-- Add unique row ID -->
                         <td>{{ record_id }}</td>
                         <td>{{ record.name }}</td>
-                        <td id="image-count-{{ record_id }}">{{ record.images | length }}</td>
+                        <td id="image-count-{{ record_id }}">{{ record.images | length }}</td> <!-- Add ID for image count -->
                         <td>
                             <form onsubmit="addImages(event, '{{ record_id }}', '{{ selected_db }}')">
                                 <input type="file" id="file-input-{{ record_id }}" name="images" accept="image/*" multiple style="display: none;" onchange="previewFiles(event, '{{ record_id }}')" />
@@ -161,20 +252,21 @@
                                 <div id="preview-{{ record_id }}" style="margin-top: 10px; font-size: 0.9em; color: #555;"></div>
                             </form>
                         </td>
-                                                
                         <td>
                             <form onsubmit="deleteImage(event, '{{ record_id }}', '{{ selected_db }}')">
-                                <select id="image-list-{{ record_id }}" name="image_name">
+                                <select id="image-list-{{ record_id }}" name="image_name"> <!-- Add ID for dropdown -->
                                     {% for image in record.images %}
                                         <option value="{{ image }}">{{ image }}</option>
                                     {% endfor %}
                                 </select>
                                 <button type="submit">Delete</button>
                             </form>
+                            <button onclick="deleteAllImages('{{ record_id }}', '{{ selected_db }}')">Delete All</button>
                         </td>
                     </tr>
                 {% endfor %}
             </tbody>
+            
         </table>
     {% endif %}
 
