@@ -121,8 +121,8 @@
             });
         }
 
-        function deleteAllImages(personId, databaseName) {
-            console.log("deleteAllImages triggered");
+        function deleteRowImages(personId, databaseName) {
+            console.log("deleteRowImages triggered");
             if (!confirm("Are you sure you want to delete all images? This action cannot be undone.")) {
                 return; // Exit if the user cancels
             }
@@ -156,10 +156,8 @@
             });
         }
 
-        function deleteAllImagesFromAllRows() {
-            console.log("deleteAllImagesFromAllRows triggered"); // Debugging
-            alert("Delete All Images button clicked!"); // Debugging
-            
+        function deleteAllImages() {
+            console.log("deleteAllImages triggered"); // Debugging            
 
             if (!confirm("Are you sure you want to delete all images for all rows? This action cannot be undone.")) {
                 return; // Exit if the user cancels
@@ -206,7 +204,121 @@
 
             alert("All images deleted for all rows.");
         }
+        
+        function addIndividual() {
+            const name = document.getElementById("new-name").value.trim();
+            const optionalId = document.getElementById("new-id").value.trim();
+            const databaseName = document.getElementById("database-name").value;
 
+            if (!name) {
+                alert("Name is required to add a new individual.");
+                return;
+            }
+
+            const data = { name: name, database_name: databaseName };
+
+            if (optionalId) {
+                data.person_id = optionalId;
+            }
+
+            fetch("/add_individual", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log(`Individual ${data.person_id} added successfully`);
+
+                    // Remove placeholder row if it exists
+                    const placeholderRow = document.getElementById("placeholder-row");
+                    if (placeholderRow) {
+                        placeholderRow.remove();
+                    }
+
+                    // Dynamically add the new row to the table
+                    const tableBody = document.getElementById("table-body");
+                    const newRow = document.createElement("tr");
+                    newRow.id = `row-${data.person_id}`;
+
+                    newRow.innerHTML = `
+                        <td>${data.person_id}</td>
+                        <td contenteditable="true" id="name-${data.person_id}">${name}</td>
+                        <td id="image-count-${data.person_id}">0</td>
+                        <td>
+                            <form onsubmit="addImages(event, '${data.person_id}', '${databaseName}')">
+                                <input type="file" id="file-input-${data.person_id}" name="images" accept="image/*" multiple style="display: none;" onchange="previewFiles(event, '${data.person_id}')" />
+                                <button type="button" onclick="document.getElementById('file-input-${data.person_id}').click()">Select Images</button>
+                                <button type="submit">Add</button>
+                                <div id="preview-${data.person_id}" style="margin-top: 10px; font-size: 0.9em; color: #555;"></div>
+                            </form>
+                        </td>
+                        <td>
+                            <form onsubmit="deleteImage(event, '${data.person_id}', '${databaseName}')">
+                                <select id="image-list-${data.person_id}" name="image_name"></select>
+                                <button type="submit">Delete</button>
+                            </form>
+                            <button onclick="deleteAllImages('${data.person_id}', '${databaseName}')">Delete All</button>
+                        </td>
+                        <td>
+                            <button onclick="removeIndividual('${data.person_id}', '${databaseName}')">Remove</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(newRow);
+
+                    alert("Individual added successfully!");
+                } else {
+                    alert(`Error adding individual: ${data.message}`);
+                }
+            })
+            .catch(error => {
+                console.error("An error occurred:", error);
+            });
+        }
+
+        function removeIndividual(personId, databaseName) {
+            if (!confirm(`Are you sure you want to remove individual ${personId}? This will delete their data permanently.`)) {
+                return; // Exit if the user cancels
+            }
+
+            // Send a request to the backend to remove the individual
+            fetch("/remove_individual", {
+                method: "POST",
+                body: JSON.stringify({ person_id: personId, database_name: databaseName }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log(`Individual ${personId} removed successfully`);
+
+                    // Remove the row from the table
+                    const row = document.getElementById(`row-${personId}`);
+                    row.remove();
+
+                    // If the table is now empty, add the placeholder row
+                    const tableBody = document.getElementById("table-body");
+                    if (tableBody.children.length === 0) {
+                        const placeholderRow = document.createElement("tr");
+                        placeholderRow.id = "placeholder-row";
+                        placeholderRow.innerHTML = `<td colspan="6" style="text-align: center;">No data available</td>`;
+                        tableBody.appendChild(placeholderRow);
+                    }
+
+                    alert("Individual removed successfully!");
+                } else {
+                    alert(`Error removing individual: ${data.message}`);
+                }
+            })
+            .catch(error => {
+                console.error("An error occurred:", error);
+            });
+        }
 
 
     </script>
@@ -225,20 +337,29 @@
     </form>
 
     <br><br>
+    <div>
+        <label for="new-name">Name:</label>
+        <input type="text" id="new-name" placeholder="Enter Name" required />
+        <label for="new-id">ID:</label>
+        <input type="number" id="new-id" placeholder="Duplicate IDs not allowed" />
+        <button onclick="addIndividual()">Add Individual</button>
+        <button onclick="deleteAllImages()">Delete All Images</button>
+    </div>
     
-    {% if database_content %}
-        <button onclick="deleteAllImagesFromAllRows()">Delete All Images</button>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>No. of Images</th>
-                    <th>Add Images</th>
-                    <th>Delete Images</th>
-                </tr>
-            </thead>
-            <tbody id="table-body">
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>No. of Images</th>
+                <th>Add Images</th>
+                <th>Delete Images</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            {% if database_content %}
                 {% for record_id, record in database_content.items() %}
                     <tr id="row-{{ record_id }}"> <!-- Add unique row ID -->
                         <td>{{ record_id }}</td>
@@ -261,14 +382,23 @@
                                 </select>
                                 <button type="submit">Delete</button>
                             </form>
-                            <button onclick="deleteAllImages('{{ record_id }}', '{{ selected_db }}')">Delete All</button>
+                            <button onclick="deleteRowImages('{{ record_id }}', '{{ selected_db }}')">Delete All</button>
+                        </td>
+                        <td>
+                            <button onclick="removeIndividual('{{ record_id }}', '{{ selected_db }}')">Remove</button>
                         </td>
                     </tr>
                 {% endfor %}
-            </tbody>
-            
-        </table>
-    {% endif %}
+            {% else %}
+                <br><br>
+                <tr id="placeholder-row">
+                    <td colspan="6" style="text-align: center;">No data available. Select database and generate.</td>
+                </tr>
+            {% endif %}
+        </tbody>
+        
+    </table>
+    
 
     <br>
     <a href="/">Back to Home</a>

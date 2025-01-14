@@ -253,6 +253,78 @@ def delete_all_images():
 
     return {"success": True}, 200
 
+@app.route('/add_individual', methods=['POST'])
+def add_individual():
+    data = request.get_json()
+    name = data.get('name')
+    optional_id = data.get('person_id')
+    database_name = data.get('database_name')
+
+    if not name or not database_name:
+        return {"success": False, "message": "Name and database name are required!"}, 400
+
+    db_folder_path = os.path.join(DATABASE_FOLDER, database_name)
+    json_file_path = os.path.join(db_folder_path, f"{database_name}.json")
+
+    # Load the database JSON file
+    with open(json_file_path, 'r') as f:
+        database_content = json.load(f)
+
+    # Determine the next smallest available ID if optional_id is not provided
+    if optional_id:
+        person_id = str(optional_id)
+        if person_id in database_content:
+            return {"success": False, "message": f"ID {person_id} is already in use!"}, 400
+    else:
+        # Find the smallest available ID
+        existing_ids = sorted(int(key) for key in database_content.keys())
+        person_id = str(next(i for i in range(1, max(existing_ids, default=0) + 2) if i not in existing_ids))
+
+    # Add the new individual
+    database_content[person_id] = {
+        "name": name,
+        "images": [],
+        "embedding": []
+    }
+
+    # Save the updated JSON file
+    with open(json_file_path, 'w') as f:
+        json.dump(database_content, f, indent=4)
+
+    return {"success": True, "person_id": person_id}, 200
+
+
+@app.route('/remove_individual', methods=['POST'])
+def remove_individual():
+    data = request.get_json()
+    person_id = str(data.get('person_id'))
+    database_name = data.get('database_name')
+
+    db_folder_path = os.path.join(DATABASE_FOLDER, database_name)
+    json_file_path = os.path.join(db_folder_path, f"{database_name}.json")
+
+    # Load the database JSON file
+    with open(json_file_path, 'r') as f:
+        database_content = json.load(f)
+
+    # Remove the individual
+    if person_id in database_content:
+        person_name = database_content[person_id]['name']
+        person_folder = os.path.join(db_folder_path, person_name)
+
+        # Delete the individual's folder
+        if os.path.exists(person_folder):
+            import shutil
+            shutil.rmtree(person_folder)  # Remove the folder and all its contents
+            print(f"Deleted folder for {person_name}: {person_folder}")  # Debugging
+
+        del database_content[person_id]
+
+    # Save the updated JSON file
+    with open(json_file_path, 'w') as f:
+        json.dump(database_content, f, indent=4)
+
+    return {"success": True}, 200
 
 
 
