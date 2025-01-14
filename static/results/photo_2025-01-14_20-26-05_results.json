@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "emotion": "happy",
+        "confidences": {
+            "neutral": 0.0,
+            "happy": 99.6,
+            "sad": 0.0,
+            "surprise": 0.39,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "bbox": [
+            267,
+            282,
+            681,
+            874
+        ]
+    }
+]

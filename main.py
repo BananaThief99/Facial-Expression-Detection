@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, Response, url_for
+from flask import Flask, request, render_template, redirect, Response, url_for, jsonify
 import os
 from process_media import process_image, process_video
 from emotion_detection import load_emotion_model
@@ -57,7 +57,6 @@ def create_database():
         if os.path.exists(db_folder_path):
             if not overwrite:
                 return "Database already exists and overwrite is not confirmed.", 400
-            import shutil
             shutil.rmtree(db_folder_path)
 
         # Create the main database folder
@@ -140,6 +139,28 @@ def manage_database():
         database_content=database_content,
     )
 
+@app.route('/delete_database', methods=['POST'])
+def delete_database():
+    db_name = request.args.get('db_name', "").strip()
+    if not db_name:
+        return {"success": False, "message": "Database name is required!"}, 400
+
+    # Ensure the database name is valid for a folder
+    safe_db_name = "".join(c if c.isalnum() or c in "-_." else "_" for c in db_name)
+    db_folder_path = os.path.join(DATABASE_FOLDER, safe_db_name)
+
+    # Check if the folder exists
+    if not os.path.exists(db_folder_path):
+        return {"success": False, "message": "Database does not exist!"}, 404
+
+    try:
+        # Delete the folder and its contents
+        shutil.rmtree(db_folder_path)
+        print(f"Deleted database folder: {db_folder_path}")  # Debugging
+        return {"success": True}, 200
+    except Exception as e:
+        print(f"Error deleting database folder: {e}")  # Debugging
+        return {"success": False, "message": "Failed to delete the database."}, 500
 
 @app.route('/add_images', methods=['POST'])
 def add_images():
@@ -186,8 +207,6 @@ def add_images():
         "images": database_content[person_id]['images']
     }, 200
 
-
-
 @app.route('/delete_images', methods=['POST'])
 def delete_images():
     person_id = request.form.get('person_id')
@@ -201,27 +220,50 @@ def delete_images():
     json_file_path = os.path.join(db_folder_path, f"{database_name}.json")
 
     # Load the database JSON file
-    with open(json_file_path, 'r') as f:
-        database_content = json.load(f)
+    try:
+        with open(json_file_path, 'r') as f:
+            database_content = json.load(f)
+    except Exception as e:
+        return {"success": False, "message": f"Error loading database file: {e}"}, 500
+
+    if person_id not in database_content:
+        return {"success": False, "message": "Invalid person ID!"}, 400
 
     person_name = database_content[person_id]['name']
     person_folder = os.path.join(db_folder_path, person_name)
     image_path = os.path.join(person_folder, image_name)
 
-    # Remove the image file and update JSON
+    # Remove the image file from disk
     if os.path.exists(image_path):
         os.remove(image_path)
-    if image_name in database_content[person_id]['images']:
-        database_content[person_id]['images'].remove(image_name)
+        print(f"Deleted image: {image_path}")
+    else:
+        print(f"Image not found on disk: {image_path}")
+
+    try:
+        # Remove the image and its corresponding embedding
+        if image_name in database_content[person_id]['images']:
+            image_index = database_content[person_id]['images'].index(image_name)
+            database_content[person_id]['images'].pop(image_index)
+            database_content[person_id]['embedding'].pop(image_index)
+            print(f"Removed image and corresponding embedding for: {image_name}")
+        else:
+            return {"success": False, "message": "Image not found in the database!"}, 400
+    except ValueError:
+        return {"success": False, "message": "Image index mismatch!"}, 400
 
     # Save the updated JSON file
-    with open(json_file_path, 'w') as f:
-        json.dump(database_content, f, indent=4)
+    try:
+        with open(json_file_path, 'w') as f:
+            json.dump(database_content, f, indent=4)
+    except Exception as e:
+        return {"success": False, "message": f"Error saving database file: {e}"}, 500
 
     return {
         "success": True,
         "image_count": len(database_content[person_id]['images'])
     }, 200
+
 
 @app.route('/delete_all_images', methods=['POST'])
 def delete_all_images():
@@ -258,7 +300,7 @@ def delete_all_images():
 
     # Delete all images in the person's folder
     deleted_images = []
-    for image in database_content[person_id]['images']:
+    for image in list(database_content[person_id]['images']):  # Use a copy of the list for iteration
         image_path = os.path.join(person_folder, image)
         print(f"Attempting to delete: {image_path}")  # Debug log
         if os.path.exists(image_path):
@@ -267,8 +309,9 @@ def delete_all_images():
         else:
             print(f"Image not found: {image_path}")  # Debug log
 
-    # Clear the images list in the JSON file
-    database_content[person_id]['images'] = []
+    # Clear both images and embeddings lists
+    database_content[person_id]['images'] = []  # Clear the images list
+    database_content[person_id]['embedding'] = []  # Clear the embeddings list
 
     # Save the updated JSON file
     try:
@@ -278,9 +321,11 @@ def delete_all_images():
         print(f"Error saving JSON file: {e}")  # Debug log
         return {"success": False, "message": "Error saving database JSON file!"}, 500
 
-    print(f"Deleted images for person {person_id}: {deleted_images}")  # Debug log
+    print(f"Deleted images and embeddings for person {person_id}: {deleted_images}")  # Debug log
 
     return {"success": True}, 200
+
+
 
 @app.route('/add_individual', methods=['POST'])
 def add_individual():
@@ -316,12 +361,15 @@ def add_individual():
         "embedding": []
     }
 
+    # Create a folder for the individual
+    person_folder = os.path.join(db_folder_path, name)
+    os.makedirs(person_folder, exist_ok=True)
+
     # Save the updated JSON file
     with open(json_file_path, 'w') as f:
         json.dump(database_content, f, indent=4)
 
     return {"success": True, "person_id": person_id}, 200
-
 
 @app.route('/remove_individual', methods=['POST'])
 def remove_individual():
@@ -343,7 +391,6 @@ def remove_individual():
 
         # Delete the individual's folder
         if os.path.exists(person_folder):
-            import shutil
             shutil.rmtree(person_folder)  # Remove the folder and all its contents
             print(f"Deleted folder for {person_name}: {person_folder}")  # Debugging
 
@@ -384,6 +431,74 @@ def get_table_data():
         })
 
     return {"success": True, "data": table_data}, 200
+@app.route('/generate_embeddings', methods=['POST'])
+def generate_embeddings():
+    db_name = request.args.get('db_name', "").strip()
+    if not db_name:
+        return jsonify({"success": False, "message": "Database name is required!"}), 400
+
+    # Ensure the database name is valid for a folder
+    safe_db_name = "".join(c if c.isalnum() or c in "-_." else "_" for c in db_name)
+    db_folder_path = os.path.join(DATABASE_FOLDER, safe_db_name)
+    json_file_path = os.path.join(db_folder_path, f"{safe_db_name}.json")
+
+    if not os.path.exists(json_file_path):
+        return jsonify({"success": False, "message": "Database not found!"}), 404
+
+    # Load the database JSON file
+    try:
+        with open(json_file_path, 'r') as f:
+            database_content = json.load(f)
+    except Exception as e:
+        return jsonify({"success": False, "message": f"Error reading database file: {e}"}), 500
+
+    # Process each image and generate embeddings
+    try:
+        for person_id, person_data in database_content.items():
+            person_folder = os.path.join(db_folder_path, person_data['name'])
+
+            updated_embeddings = []  # Initialize a new embeddings list
+
+            for image_name in person_data['images']:
+                image_path = os.path.join(person_folder, image_name)
+
+                if not os.path.exists(image_path):
+                    print(f"Image {image_path} not found. Skipping.")
+                    updated_embeddings.append(None)  # Append None for missing images
+                    continue
+
+                try:
+                    # Detect face using RetinaFace
+                    detected_faces = DeepFace.detectFace(img_path=image_path, detector_backend="retinaface")
+                    if detected_faces is None:
+                        print(f"No face detected in {image_path}. Skipping.")
+                        updated_embeddings.append(None)  # Append None for images with no faces
+                        continue
+
+                    # Generate embedding using FaceNet
+                    embedding = DeepFace.represent(img_path=image_path, model_name="Facenet")[0]["embedding"]
+                    if embedding:
+                        updated_embeddings.append(embedding)  # Add the new embedding
+                        print(f"Generated embedding for {image_path}")
+                    else:
+                        updated_embeddings.append(None)  # Append None for failed embeddings
+                        print(f"Failed to generate embedding for {image_path}")
+                except Exception as e:
+                    print(f"Error processing {image_path}: {e}")
+                    updated_embeddings.append(None)  # Append None for errors
+                    continue
+
+            # Replace the existing embeddings with the updated list
+            person_data['embedding'] = updated_embeddings
+
+        # Save the updated JSON file
+        with open(json_file_path, 'w') as f:
+            json.dump(database_content, f, indent=4)
+
+        return jsonify({"success": True, "message": "Embeddings generated and updated successfully."}), 200
+
+    except Exception as e:
+        return jsonify({"success": False, "message": f"Error generating embeddings: {e}"}), 500
 
 
 @app.route('/video/<path:filename>')

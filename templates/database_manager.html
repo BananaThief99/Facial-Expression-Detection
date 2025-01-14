@@ -60,7 +60,6 @@
             .catch(error => alert("An error occurred: " + error));
         }
 
-
         function previewFiles(event, personId) {
             const input = event.target;
             const previewDiv = document.getElementById(`preview-${personId}`);
@@ -156,8 +155,8 @@
             });
         }
 
-        function deleteAllImages() {
-            console.log("deleteAllImages triggered"); // Debugging            
+        async function deleteAllImages() {
+            console.log("deleteAllImages triggered"); // Debugging
 
             if (!confirm("Are you sure you want to delete all images for all rows? This action cannot be undone.")) {
                 return; // Exit if the user cancels
@@ -166,24 +165,25 @@
             const rows = document.querySelectorAll("#table-body tr");
             const databaseName = document.getElementById("database-name").value;
 
-            console.log("Rows to process:", rows.length);
+            console.log("Rows to process:", rows.length); // Debugging
 
-
-            rows.forEach(row => {
+            for (const row of rows) {
                 const personId = row.id.replace("row-", "");
 
                 const formData = new FormData();
                 formData.append("person_id", personId);
                 formData.append("database_name", databaseName);
 
-                fetch("/delete_all_images", {
-                    method: "POST",
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
+                try {
+                    const response = await fetch("/delete_all_images", {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    const data = await response.json();
+
                     if (data.success) {
-                        console.log(`All images deleted for person ${personId}`); // Debug log
+                        console.log(`All images deleted for person ${personId}`); // Debugging
 
                         // Update the image count to 0 and clear dropdown
                         const imageCountCell = document.getElementById(`image-count-${personId}`);
@@ -196,14 +196,14 @@
                     } else {
                         console.error(`Error deleting all images for person ${personId}: ${data.message}`);
                     }
-                })
-                .catch(error => {
-                    console.error("An error occurred: ", error);
-                });
-            });
+                } catch (error) {
+                    console.error(`An error occurred while deleting images for person ${personId}:`, error);
+                }
+            }
 
             alert("All images deleted for all rows.");
         }
+
         
         function addIndividual() {
             const name = document.getElementById("new-name").value.trim();
@@ -320,6 +320,50 @@
             });
         }
 
+        async function deleteDatabase(databaseName) {
+            if (!confirm(`Are you sure you want to delete the database "${databaseName}"? This action cannot be undone.`)) {
+                return; // Exit if the user cancels
+            }
+
+            try {
+                const response = await fetch(`/delete_database?db_name=${encodeURIComponent(databaseName)}`, {
+                    method: "POST"
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    alert(`Database "${databaseName}" deleted successfully!`);
+                    window.location.href = "/"; // Redirect to the homepage
+                } else {
+                    alert(`Error deleting database: ${data.message}`);
+                }
+            } catch (error) {
+                console.error("An error occurred while deleting the database:", error);
+                alert("Failed to delete the database. Please try again.");
+            }
+        }
+    
+        async function generateEmbeddings(databaseName) {
+        if (!confirm(`Are you sure you want to generate embeddings for all images in the "${databaseName}" database?`)) {
+            return; // Exit if the user cancels
+        }
+
+        try {
+            const response = await fetch(`/generate_embeddings?db_name=${encodeURIComponent(databaseName)}`, {
+                method: "POST"
+            });
+            const data = await response.json();
+
+            if (data.success) {
+                alert(`Embeddings generated successfully for database "${databaseName}".`);
+            } else {
+                alert(`Error generating embeddings: ${data.message}`);
+            }
+        } catch (error) {
+            console.error("An error occurred while generating embeddings:", error);
+            alert("Failed to generate embeddings. Please try again.");
+        }
+    }
 
     </script>
 </head>
@@ -328,6 +372,7 @@
     <form action="/manage_database" method="post">
         <label for="database-name">Database:</label>
         <select id="database-name" name="database_name" required>
+            <option value="" disabled selected>-- Select a Database --</option> <!-- Default placeholder -->
             {% for db in databases %}
                 <option value="{{ db }}" {% if db == selected_db %}selected{% endif %}>{{ db }}</option>
             {% endfor %}
@@ -335,7 +380,6 @@
         <br><br>
         <input type="submit" value="Open Database" class="button">
     </form>
-
     <br><br>
     <div>
         <label for="new-name">Name:</label>
@@ -343,10 +387,7 @@
         <label for="new-id">ID:</label>
         <input type="number" id="new-id" placeholder="Duplicate IDs not allowed" />
         <button onclick="addIndividual()">Add Individual</button>
-        <button onclick="deleteAllImages()">Delete All Images</button>
     </div>
-    
-    
     <table border="1">
         <thead>
             <tr>
@@ -398,9 +439,10 @@
         </tbody>
         
     </table>
-    
-
     <br>
+    <button onclick="deleteAllImages()">Delete All Images</button>
+    <button onclick="deleteDatabase('{{ selected_db }}')">Delete Database</button>
+    <button onclick="generateEmbeddings('{{ selected_db }}')">Generate Embeddings</button>
     <a href="/">Back to Home</a>
 </body>
 </html>
