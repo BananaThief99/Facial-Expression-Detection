@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Manage Database</title>
+    <script>
+        function handleDrop(event, personId) {
+            event.preventDefault();
+            const files = event.dataTransfer.files;
+            const formData = new FormData();
+            formData.append("person_id", personId);
+
+            for (const file of files) {
+                formData.append("images", file);
+            }
+
+            fetch(`/add_images`, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => alert("Error: " + error));
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function deleteImage(event, personId, databaseName) {
+            event.preventDefault(); // Prevent form submission
+            
+            const selectElement = document.getElementById(`image-list-${personId}`);
+            const selectedImage = selectElement.value;
+
+            if (!selectedImage) {
+                alert("Please select an image to delete.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("person_id", personId);
+            formData.append("database_name", databaseName);
+            formData.append("image_name", selectedImage);
+
+            fetch("/delete_images", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Remove the deleted image from the dropdown
+                    const optionToRemove = selectElement.querySelector(`option[value="${selectedImage}"]`);
+                    if (optionToRemove) {
+                        optionToRemove.remove();
+                    }
+                    // Update the image count in the table
+                    const imageCountCell = document.getElementById(`image-count-${personId}`);
+                    imageCountCell.textContent = data.image_count;
+                    alert("Image deleted successfully!");
+                } else {
+                    alert("Error deleting image: " + data.message);
+                }
+            })
+            .catch(error => {
+                alert("An error occurred: " + error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Manage Database</h1>
+    <form action="/manage_database" method="post">
+        <label for="database-name">Database:</label>
+        <select id="database-name" name="database_name" required>
+            {% for db in databases %}
+                <option value="{{ db }}" {% if db == selected_db %}selected{% endif %}>{{ db }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Open Database" class="button">
+    </form>
+
+    <br><br>
+    {% if database_content %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>No. of Images</th>
+                    <th>Add Images</th>
+                    <th>Delete Images</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record_id, record in database_content.items() %}
+                    <tr>
+                        <td>{{ record_id }}</td>
+                        <td>{{ record.name }}</td>
+                        <td id="image-count-{{ record_id }}">{{ record.images | length }}</td>
+                        <td>
+                            <div ondrop="handleDrop(event, '{{ record_id }}')" ondragover="allowDrop(event)" 
+                                 style="border: 2px dashed #ccc; padding: 10px; text-align: center; cursor: pointer;">
+                                Drag and drop images here
+                            </div>
+                        </td>
+                        <td>
+                            <form onsubmit="deleteImage(event, '{{ record_id }}', '{{ selected_db }}')">
+                                <select id="image-list-{{ record_id }}" name="image_name">
+                                    {% for image in record.images %}
+                                        <option value="{{ image }}">{{ image }}</option>
+                                    {% endfor %}
+                                </select>
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
