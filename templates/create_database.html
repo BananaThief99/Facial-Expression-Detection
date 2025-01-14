@@ -4,17 +4,49 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/styles.css">
     <title>Create Database</title>
+    <script>
+        async function checkDatabaseExists(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const dbName = document.getElementById("db-name").value.trim();
+            if (!dbName) {
+                alert("Database name is required.");
+                return;
+            }
+
+            try {
+                // Check if the database already exists
+                const response = await fetch(`/check_database_exists?db_name=${encodeURIComponent(dbName)}`);
+                const data = await response.json();
+
+                if (data.exists) {
+                    // Prompt for overwrite if the database exists
+                    if (confirm(`A database named "${dbName}" already exists. Do you want to overwrite it?`)) {
+                        document.getElementById("overwrite").value = "true";
+                        document.getElementById("create-form").submit(); // Proceed with form submission
+                    }
+                } else {
+                    document.getElementById("create-form").submit(); // Proceed with form submission
+                }
+            } catch (error) {
+                console.error("An error occurred while checking the database:", error);
+                alert("c");
+            }
+        }
+
+    </script>
 </head>
 <body>
     <h1>Create Database</h1>
-    <form action="/create_database" method="post">
+    <form id="create-form" action="/create_database" method="post" onsubmit="checkDatabaseExists(event)">
         <label for="db-name">Database Name:</label>
         <input type="text" id="db-name" name="db_name" placeholder="Enter database name" required>
         <br><br>
         <label for="name-list">List of Names:</label>
         <textarea id="name-list" name="name_list" rows="10" cols="30" placeholder="Enter names, one per line..." required></textarea>
+        <input type="hidden" id="overwrite" name="overwrite" value="false">
         <br><br>
-        <input type="submit" value="Save Names" class="button">
+        <input type="submit" value="Create" class="button">
     </form>
     <br>
     <a href="/">Back to Home</a>

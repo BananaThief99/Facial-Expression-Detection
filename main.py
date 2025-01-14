@@ -1,10 +1,11 @@
-from flask import Flask, request, render_template, redirect, Response
+from flask import Flask, request, render_template, redirect, Response, url_for
 import os
 from process_media import process_image, process_video
 from emotion_detection import load_emotion_model
 from deepface import DeepFace
 import json
 import glob
+import shutil
 
 app = Flask(__name__)
 
@@ -20,13 +21,29 @@ os.makedirs(RESULTS_FOLDER, exist_ok=True)
 def index():
     return render_template('index.html')
 
+@app.route('/check_database_exists', methods=['GET'])
+def check_database_exists():
+    db_name = request.args.get('db_name', '').strip()
+    if not db_name:
+        return {"exists": False}, 400  # Missing or invalid database name
+
+    safe_db_name = "".join(c if c.isalnum() or c in "-_." else "_" for c in db_name)
+    db_folder_path = os.path.join(DATABASE_FOLDER, safe_db_name)
+
+    exists = os.path.exists(db_folder_path)
+    return {"exists": exists}, 200
+
 @app.route('/create_database', methods=['GET', 'POST'])
 def create_database():
     if request.method == 'GET':
+        # Render the form for creating a database
         return render_template('create_database.html')
+
     elif request.method == 'POST':
-        db_name = request.form.get('db_name').strip()
-        name_list = request.form.get('name_list').strip()
+        # Process the form submission
+        db_name = request.form.get('db_name', "").strip()
+        name_list = request.form.get('name_list', "").strip()
+        overwrite = request.form.get('overwrite') == "true"
 
         if not db_name or not name_list:
             return "Database name and name list are required!", 400
@@ -34,17 +51,25 @@ def create_database():
         # Ensure the database name is valid for a folder
         safe_db_name = "".join(c if c.isalnum() or c in "-_." else "_" for c in db_name)
         db_folder_path = os.path.join(DATABASE_FOLDER, safe_db_name)
+        json_file_path = os.path.join(db_folder_path, f"{safe_db_name}.json")
+
+        # Handle overwrite
+        if os.path.exists(db_folder_path):
+            if not overwrite:
+                return "Database already exists and overwrite is not confirmed.", 400
+            import shutil
+            shutil.rmtree(db_folder_path)
 
         # Create the main database folder
         os.makedirs(db_folder_path, exist_ok=True)
+        print("Database folder created:", db_folder_path)  # Debugging
 
-        # JSON file path inside the database folder
-        json_file_path = os.path.join(db_folder_path, f"{safe_db_name}.json")
-
-        # Split the input into a list of names
+        # Split names into a list
         names = [name.strip() for name in name_list.splitlines() if name.strip()]
+        if not names:
+            return "The list of names cannot be empty!", 400
 
-        # Construct the JSON structure
+        # Construct the JSON structure and create individual folders
         embeddings = {}
         for i, name in enumerate(names, start=1):
             embeddings[str(i)] = {
@@ -53,15 +78,19 @@ def create_database():
                 "embedding": []
             }
 
-            # Create a subfolder for each name
+            # Create a subfolder for each individual
             person_folder = os.path.join(db_folder_path, name)
             os.makedirs(person_folder, exist_ok=True)
+            print(f"Created folder for {name}: {person_folder}")  # Debugging
 
-        # Save the JSON file inside the database folder
+        # Write the JSON file
         with open(json_file_path, 'w') as f:
             json.dump(embeddings, f, indent=4)
+        print("JSON file created:", json_file_path)  # Debugging
 
-        return f"Database '{safe_db_name}' created successfully with {len(names)} entries. Stored in {db_folder_path}."
+        # Redirect to manage database
+        return redirect(url_for('manage_database', database_name=safe_db_name))
+
 
 @app.route('/manage_database', methods=['GET', 'POST'])
 def manage_database():
