@@ -5,27 +5,79 @@
     <link rel="stylesheet" href="/static/styles.css">
     <title>Manage Database</title>
     <script>
-        function handleDrop(event, personId) {
-            event.preventDefault();
-            const files = event.dataTransfer.files;
+        function addImages(event, personId, databaseName) {
+            event.preventDefault(); // Prevent form submission
+
+            const fileInput = document.getElementById(`file-input-${personId}`);
+            const previewDiv = document.getElementById(`preview-${personId}`);
+            const files = fileInput.files;
+
+            if (!files.length) {
+                alert("Please select images to add.");
+                return;
+            }
+
             const formData = new FormData();
             formData.append("person_id", personId);
+            formData.append("database_name", databaseName);
 
             for (const file of files) {
                 formData.append("images", file);
             }
 
-            fetch(`/add_images`, {
+            fetch("/add_images", {
                 method: "POST",
                 body: formData
             })
-            .then(response => response.text())
-            .then(data => alert(data))
-            .catch(error => alert("Error: " + error));
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Update No. of Images in the table
+                    const imageCountCell = document.getElementById(`image-count-${personId}`);
+                    imageCountCell.textContent = data.image_count;
+
+                    // Update Delete Images dropdown
+                    const selectElement = document.getElementById(`image-list-${personId}`);
+                    selectElement.innerHTML = ""; // Clear current options
+
+                    // Add new options based on updated images
+                    data.images.forEach(image => {
+                        const option = document.createElement("option");
+                        option.value = image;
+                        option.textContent = image;
+                        selectElement.appendChild(option);
+                    });
+
+                    // Clear the preview and reset the file input
+                    previewDiv.innerHTML = "";
+                    fileInput.value = "";
+
+                    alert("Images added successfully!");
+                } else {
+                    alert("Error adding images: " + data.message);
+                }
+            })
+            .catch(error => alert("An error occurred: " + error));
         }
 
-        function allowDrop(event) {
-            event.preventDefault();
+
+        function previewFiles(event, personId) {
+            const input = event.target;
+            const previewDiv = document.getElementById(`preview-${personId}`);
+            previewDiv.innerHTML = ""; // Clear previous preview
+
+            const files = input.files;
+            if (files.length > 0) {
+                const fileList = document.createElement("ul");
+                for (const file of files) {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = file.name; // Display the file name
+                    fileList.appendChild(listItem);
+                }
+                previewDiv.appendChild(fileList);
+            } else {
+                previewDiv.textContent = "No files selected.";
+            }
         }
 
         function deleteImage(event, personId, databaseName) {
@@ -102,11 +154,14 @@
                         <td>{{ record.name }}</td>
                         <td id="image-count-{{ record_id }}">{{ record.images | length }}</td>
                         <td>
-                            <div ondrop="handleDrop(event, '{{ record_id }}')" ondragover="allowDrop(event)" 
-                                 style="border: 2px dashed #ccc; padding: 10px; text-align: center; cursor: pointer;">
-                                Drag and drop images here
-                            </div>
+                            <form onsubmit="addImages(event, '{{ record_id }}', '{{ selected_db }}')">
+                                <input type="file" id="file-input-{{ record_id }}" name="images" accept="image/*" multiple style="display: none;" onchange="previewFiles(event, '{{ record_id }}')" />
+                                <button type="button" onclick="document.getElementById('file-input-{{ record_id }}').click()">Select Images</button>
+                                <button type="submit">Add</button>
+                                <div id="preview-{{ record_id }}" style="margin-top: 10px; font-size: 0.9em; color: #555;"></div>
+                            </form>
                         </td>
+                                                
                         <td>
                             <form onsubmit="deleteImage(event, '{{ record_id }}', '{{ selected_db }}')">
                                 <select id="image-list-{{ record_id }}" name="image_name">

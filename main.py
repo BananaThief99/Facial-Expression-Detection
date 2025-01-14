@@ -114,40 +114,49 @@ def manage_database():
 
 @app.route('/add_images', methods=['POST'])
 def add_images():
-    # Validate the incoming data
+    # Retrieve data from the request
     person_id = request.form.get('person_id')
-    database_name = request.form.get('database_name')  # This was missing earlier; ensure it's passed
+    database_name = request.form.get('database_name')
     files = request.files.getlist('images')
 
+    # Validate input
     if not person_id or not database_name or not files:
-        return "Invalid request!", 400
+        return {"success": False, "message": "Invalid request!"}, 400
 
+    # Paths for the database and JSON file
     db_folder_path = os.path.join(DATABASE_FOLDER, database_name)
     json_file_path = os.path.join(db_folder_path, f"{database_name}.json")
 
-    # Load the database JSON file
+    # Load the current database content
     with open(json_file_path, 'r') as f:
         database_content = json.load(f)
 
-    # Validate the person_id
+    # Ensure the person ID is valid
     if person_id not in database_content:
-        return "Invalid person ID!", 400
+        return {"success": False, "message": "Invalid person ID!"}, 400
 
+    # Get the folder for the specific person
     person_name = database_content[person_id]['name']
     person_folder = os.path.join(db_folder_path, person_name)
 
-    # Save images to the person's folder and update JSON
+    # Process and save the images
     for file in files:
         file_path = os.path.join(person_folder, file.filename)
-        file.save(file_path)  # Save the file to the folder
+        file.save(file_path)  # Save the image file
         if file.filename not in database_content[person_id]['images']:
             database_content[person_id]['images'].append(file.filename)
 
-    # Save the updated JSON file
+    # Save the updated JSON content back to the file
     with open(json_file_path, 'w') as f:
         json.dump(database_content, f, indent=4)
 
-    return "Images added successfully!", 200
+    # Return the updated image count and list of images
+    return {
+        "success": True,
+        "image_count": len(database_content[person_id]['images']),
+        "images": database_content[person_id]['images']
+    }, 200
+
 
 
 @app.route('/delete_images', methods=['POST'])
